@@ -1,11 +1,11 @@
 Number,Sentence,Prompt,Image Link
-1," Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React Query.","1. An image of a colorful and aesthetically pleasing React logo with ""React Query"" in a speech bubble rising from it."
-2,"In this introductory video, we will talk about the what and why of React Query and in the rest of the series, we will explore the different features it provides.",2. An image of a laptop wrapped in a pattern of React Query inspired colors with a various features of React Query highlighted around it.
-3,Now what I'm trying to do is make this channel a one stop shop for everything related to React.,"3. An image of a person's hand pressing a button with a React Query symbol on it, with various colored panels of React Query flying up into the sky."
-4,"So far, we have tutorials on React Fundamentals and Advanced Topics, React Hooks, React Redux, React Formic, React Storybook, React Render, Practical React, React Table and React Type Script.",4. An image of a person excitedly looking at a React Query terminal with a loading bar at the bottom showing progress.
-5,"To add to this list, we are going to learn about the React Query package.",5. An image of different components of React Query glowing in a pitch dark background.
-6,Let's begin with the what.,"6. An image of a person immersed in a React Query tutorial series, with a variety of React symbols floating in the background."
-7,What is React Query?,7. An image of a person's finger tapping on a React Query symbol and the colors being directed inwards.
-8,"Well, it is a library for fetching data in a React application.",8. An image of a person diving into a sea of React Query code with rainbow colors on the surface.
-9,Now you might wonder why would you need a library for data fetching?,9. An image of a person's hand using React Query Dev tools to solve a challenging problem.
-10,"Since React is a UI library, there is no specific pattern for data fetching.",10. An image of a person reaching out to success with a React Query inspired symbol in the sky.
+1," Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React Query.","1. A person typing on a laptop, with React Query Library open and a stack of books marked ""React Fundamentals"" and ""React Hooks""."
+2,"In this introductory video, we will talk about the what and why of React Query and in the rest of the series, we will explore the different features it provides.","2. A person looking at data intuitively pulled from a remote server via React Query, displayed on a tablet in their hands."
+3,Now what I'm trying to do is make this channel a one stop shop for everything related to React.,"3. A person attributing an optimistic update of state data to a successful mutation in React Query, marking an achievement with a fist-pump in their celebratory pose."
+4,"So far, we have tutorials on React Fundamentals and Advanced Topics, React Hooks, React Redux, React Formic, React Storybook, React Render, Practical React, React Table and React Type Script.",4. A person scrolling through a plethora of components utilizing the React Query library illuminated in their light-blue computer screen.
+5,"To add to this list, we are going to learn about the React Query package.",5. A person lazily loading a query using React Query while also surfing the net on their laptop.
+6,Let's begin with the what.,6. A person observing a complex graph of React Query queries and dependencies arising from a React application.
+7,What is React Query?,7. A person cross-referencing the content of the React Query with the React Table and React Type Script library bookmarked on their laptop.
+8,"Well, it is a library for fetching data in a React application.",8. A person coding a complex query from scratch as a new entry on the React Query notebook.
+9,Now you might wonder why would you need a library for data fetching?,9. A person with a React Query Dev Tool panel open while utilizing their phone at the same time for a more comprehensive data understanding.
+10,"Since React is a UI library, there is no specific pattern for data fetching.","10. A person intently setting up an Axios Interceptor to use with React Query, with a satisfied grin on their face."
