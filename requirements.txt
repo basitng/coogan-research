@@ -23,6 +23,7 @@ google-auth==2.17.1
 google-auth-httplib2==0.1.0
 google-auth-oauthlib==1.0.0
 googleapis-common-protos==1.59.0
+gunicorn
 httplib2==0.22.0
 idna==3.4
 Jinja2==3.1.2
