@@ -1,11 +1,11 @@
 Number,Sentence,Prompt,Image Link
-1," Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React Query.",1. An image of Vishwas standing in front of a React Query sign with mountains in the background.
-2,"In this introductory video, we will talk about the what and why of React Query and in the rest of the series, we will explore the different features it provides.",2. An image of Vishwas in front of a database with a React Query logo glowing in the background.
-3,Now what I'm trying to do is make this channel a one stop shop for everything related to React.,3. An image of a laptop and a React Query book lying open on a park bench.
-4,"So far, we have tutorials on React Fundamentals and Advanced Topics, React Hooks, React Redux, React Formic, React Storybook, React Render, Practical React, React Table and React Type Script.",4. An image of Vishwas lecturing in front of a whiteboard with React Query scribbled on it.
-5,"To add to this list, we are going to learn about the React Query package.",5. A picture of Vishwas talking to a group of students in an auditorium full of floating React Query logos.
-6,Let's begin with the what.,6. An image of an astronaut in space with a glowing React Query logo.
-7,What is React Query?,7. A photo of a road trip with React Query written on a van's back window.
-8,"Well, it is a library for fetching data in a React application.",8. A photo of a group of people in the desert with a React Query logo on a flag in the background.
-9,Now you might wonder why would you need a library for data fetching?,9. An image of a park at night with React Query written on a playground slide.
-10,"Since React is a UI library, there is no specific pattern for data fetching.",10. An image of a group of people on a beach at sunset with the React Query logo and a beach umbrella in the background.
+1," Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React Query.","1.  A woman standing in the middle of a bustling city skyline, holding her laptop open and examining React Query code."
+2,"In this introductory video, we will talk about the what and why of React Query and in the rest of the series, we will explore the different features it provides.","2. A man perched on a cliff, the sun setting in the background, his laptop open in front of him as he examines a React Query tutorial."
+3,Now what I'm trying to do is make this channel a one stop shop for everything related to React.,"3. A woman lounging in a hammock between trees, her laptop open in front of her with a React Query tutorial loaded up."
+4,"So far, we have tutorials on React Fundamentals and Advanced Topics, React Hooks, React Redux, React Formic, React Storybook, React Render, Practical React, React Table and React Type Script.","4. A person in a boat on a serene lake, the sun shining down from above and the person typing away at a React Query tutorial on their laptop."
+5,"To add to this list, we are going to learn about the React Query package.","5. A person standing in the middle of a desert, writing React Query code on their laptop and the sky filled with stars above them."
+6,Let's begin with the what.,"6. A person sitting in a family living room, their laptop resting on the arm of a chair as they read about React Query."
+7,What is React Query?,"7. A person leaning against a tree, overlooking a mountain range, their laptop open and React Query code on the screen."
+8,"Well, it is a library for fetching data in a React application.","8. A person walking along a beach, their laptop open in one hand and React Query code displayed on the screen."
+9,Now you might wonder why would you need a library for data fetching?,"9. A person sitting in a cafe at a small table,  reading up on React Query as they sip from a cup of coffee."
+10,"Since React is a UI library, there is no specific pattern for data fetching.","10.  A person standing on a balcony in the city, the cityscape spread out before them and their laptop open with React Query code."
