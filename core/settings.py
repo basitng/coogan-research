@@ -10,13 +10,14 @@ SECRET_KEY = 'django-insecure-e6igl46u@p4%0(&+_)4l7cei0&=y8+#s7f)=b_ymxm%bsh7yi^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["coogan-research.onrender.com"]
+ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:8000",
     "http://127.0.0.1:9000",
-    "https://coogan-research.onrender.com"
+    "https://coogan-research.onrender.com",
+    "coogan-research.onrender.com"
 ]
 
 
