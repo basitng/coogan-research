@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-e6igl46u@p4%0(&+_)4l7cei0&=y8+#s7f)=b_ymxm%bsh7yi^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["coogan-research.onrender.com"]
 
 # Application definition
 INSTALLED_APPS = [
