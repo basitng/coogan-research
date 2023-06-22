@@ -10,13 +10,7 @@ SECRET_KEY = 'django-insecure-e6igl46u@p4%0(&+_)4l7cei0&=y8+#s7f)=b_ymxm%bsh7yi^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["coogan-research.onrender.com"]
-
-CORS_ORIGIN_WHITELIST = [
-    "https://coogan-research.onrender.com",
-    "http://localhost:8000",
-    "http://localhost:3000"
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
@@ -27,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "corsheaders",
+    'rest_framework',
     'services.apps.ServicesConfig',
     'cloudinary_storage',
     'cloudinary',
@@ -107,6 +102,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = [
+    "https://coogan-research.onrender.com",
+    "http://localhost:8000",
+    "http://localhost:3000"
+]
 
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
