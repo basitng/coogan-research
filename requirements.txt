@@ -40,7 +40,7 @@ numba
 numpy
 oauthlib==3.2.2
 openai
-openai-whisper
+openai-whisper==20230124
 opencv-python
 pandas
 Pillow==9.5.0
