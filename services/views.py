@@ -22,31 +22,31 @@ class VideoUploadView(APIView):
 
         video_url = response['secure_url']
         transcript_file = "transcript.vtt"
-        transcript = textToVTT(video_url, transcript_file)
-        if transcript == "":
-            return Response({'message': "Could not create a video transcript"}, status=status.HTTP_404_NOT_FOUND)
+        # transcript = textToVTT(video_url, transcript_file)
+        # if transcript == "":
+        #     return Response({'message': "Could not create a video transcript"}, status=status.HTTP_404_NOT_FOUND)
 
-        content = get_sentences(transcript)
-        prompter = Prompter(transcript)
-        prompter.generate_prompts()
-        prompts = prompter.get_prompts()
+        # content = get_sentences(transcript)
+        # prompter = Prompter(transcript)
+        # prompter.generate_prompts()
+        # prompts = prompter.get_prompts()
 
         data = {
             'video_url': video_url,
-            'transcript': transcript
+            # 'transcript': transcript
         }
         serializer = VideoFileSerializer(data)
-        image_links = []
+        # image_links = []
 
-        csv_path = "activity.csv"
-        file_path = "transcript.txt"
-        create_csv_file(content, prompts, csv_path)
-        create_file(transcript, file_path)
-        send_email(csv_path, transcript_file,
-                   file_path, "basitng2004@gmail.com")
+        # csv_path = "activity.csv"
+        # file_path = "transcript.txt"
+        # create_csv_file(content, prompts, csv_path)
+        # create_file(transcript, file_path)
+        # send_email(csv_path, transcript_file,
+        #            file_path, "basitng2004@gmail.com")
 
         response_data = {
             'serializer': serializer.data,
-            'prompts': prompts
+            # 'prompts': prompts
         }
         return Response(response_data, status=status.HTTP_201_CREATED)
