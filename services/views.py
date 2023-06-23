@@ -11,6 +11,11 @@ from utils.prompter import Prompter
 from utils.send_email import send_email
 
 
+class GetVideo(APIView):
+    def get(self, request, *args, **kwargs):
+        return Response({'message': "Done"})
+
+
 class VideoUploadView(APIView):
     def post(self, request, format=None):
         video_file = request.FILES.get('video')
