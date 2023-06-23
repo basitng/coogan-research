@@ -11,21 +11,11 @@ SECRET_KEY = 'django-insecure-e6igl46u@p4%0(&+_)4l7cei0&=y8+#s7f)=b_ymxm%bsh7yi^
 DEBUG = True
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://localhost:8000",
-    "http://127.0.0.1:3000",
-    'https://coogan-whisper.onrender.com',
-    'coogan-whisper.onrender.com'
-    # "https://plaid-app-coral.vercel.app",
-
+ALLOWED_HOSTS = [
+    "localhost",
+    "coogan-research.onrender.com",
+    "coogan-research"
 ]
-
-CORS_ORIGIN_WHITELIST = [
-    'https://coogan-whisper.onrender.com',
-    # "https://plaid-app-coral.vercel.app",
-]
-
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -34,8 +24,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "corsheaders",
     'rest_framework',
+    "corsheaders",
     'services.apps.ServicesConfig',
     'cloudinary_storage',
     'cloudinary',
@@ -44,12 +34,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -71,6 +61,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'core.wsgi.application'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
 
 
 # Database
