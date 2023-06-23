@@ -11,11 +11,8 @@ SECRET_KEY = 'django-insecure-e6igl46u@p4%0(&+_)4l7cei0&=y8+#s7f)=b_ymxm%bsh7yi^
 DEBUG = True
 
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "coogan-whisper.onrender.com",
-    "coogan-whisper"
-]
+ALLOWED_HOSTS = []
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -43,6 +40,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
+
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://coogan-whisper.onrender.com",
+    "http://localhost:8080",
+    "http://localhost:3000"
+]
 
 TEMPLATES = [
     {
