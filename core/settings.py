@@ -13,8 +13,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "localhost",
-    "coogan-research.onrender.com",
-    "coogan-research"
+    "coogan-whisper.onrender.com",
+    "coogan-whisper"
 ]
 # Application definition
 INSTALLED_APPS = [
