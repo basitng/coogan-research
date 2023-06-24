@@ -17,16 +17,16 @@ class GetVideo(APIView):
 
 
 class VideoUploadView(APIView):
-    def post(self, request, *args, **kwargs):
+    def post(self, request, format=None):
         video_file = request.FILES.get('video')
-        # response = cloudinary.uploader.upload(
-        #     file=video_file,
-        #     resource_type='video',
-        #     folder='videos/'
-        # )
+        response = cloudinary.uploader.upload(
+            file=video_file,
+            resource_type='video',
+            folder='videos/'
+        )
 
-        # video_url = response['secure_url']
-        # transcript_file = "transcript.vtt"
+        video_url = response['secure_url']
+        transcript_file = "transcript.vtt"
         # transcript = textToVTT(video_url, transcript_file)
         # if transcript == "":
         #     return Response({'message': "Could not create a video transcript"}, status=status.HTTP_404_NOT_FOUND)
@@ -36,11 +36,11 @@ class VideoUploadView(APIView):
         # prompter.generate_prompts()
         # prompts = prompter.get_prompts()
 
-        # data = {
-        #     'video_url': video_url,
-        #     # 'transcript': transcript
-        # }
-        # serializer = VideoFileSerializer(data)
+        data = {
+            'video_url': video_url,
+            # 'transcript': transcript
+        }
+        serializer = VideoFileSerializer(data)
         # image_links = []
 
         # csv_path = "activity.csv"
@@ -51,8 +51,7 @@ class VideoUploadView(APIView):
         #            file_path, "basitng2004@gmail.com")
 
         response_data = {
-            'video': video_file
-            # 'serializer': serializer.data,
+            'serializer': serializer.data,
             # 'prompts': prompts
         }
         return Response(response_data, status=status.HTTP_201_CREATED)
