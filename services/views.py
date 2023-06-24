@@ -17,8 +17,9 @@ class GetVideo(APIView):
 
 
 class VideoUploadView(APIView):
-    def post(self, request, format=None):
+    def post(self, request, *args, **kwargs):
         video_file = request.FILES.get('video')
+        print("🚀 ~ file: views.py:22 ~ video_file:", video_file)
         response = cloudinary.uploader.upload(
             file=video_file,
             resource_type='video',
