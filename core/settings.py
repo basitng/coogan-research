@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-e6igl46u@p4%0(&+_)4l7cei0&=y8+#s7f)=b_ymxm%bsh7yi^
 DEBUG = True
 
 
-ALLOWED_HOSTS = ["coogan-whisper.onrender.com"]
+ALLOWED_HOSTS = ["coogan-whisper.onrender.com", "localhost"]
 
 # Application definition
 INSTALLED_APPS = [
