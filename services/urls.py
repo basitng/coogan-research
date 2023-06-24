@@ -4,5 +4,5 @@ from .views import GetVideo, VideoUploadView
 
 urlpatterns = [
     path('video/', VideoUploadView.as_view(), name='audio-file'),
-    path('', GetVideo.as_view(), name=''),
+    path('vid/', GetVideo.as_view(), name=''),
 ]
