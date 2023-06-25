@@ -15,7 +15,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    "coogan-research-dd6588744566.herokuapp.com", "localhost"]
+    "crylow.onrender.com", "localhost"]
 
 # Application definition
 INSTALLED_APPS = [
