@@ -40,7 +40,7 @@ requests==2.31.0
 six==1.16.0
 sqlparse==0.4.4
 sympy
-tiktoken
+tiktoken==0.4.0
 torch
 tqdm
 typing_extensions
