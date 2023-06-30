@@ -47,3 +47,4 @@ tzdata
 urllib3
 whitenoise
 yarl
+gunicorn
