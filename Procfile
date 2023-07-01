@@ -1,1 +1,2 @@
-web gunicorn project.wsgi:application --log-file -
+gunicorn project:app --daemon
+rq worker --with-scheduler
