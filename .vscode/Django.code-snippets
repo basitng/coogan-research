@@ -1,0 +1,25 @@
+{
+  "Model Serializer": {
+    "scope": "python",
+    "prefix": "serializer",
+    "body": [
+      "class ${model}Serializer(serializer.ModelSerializer):",
+      "   class Meta:",
+      "       model = ${model}",
+      "       fields = '__all__'"
+    ]
+  },
+  "ViewSet": {
+    "scope": "python",
+    "prefix": "drf_url",
+    "body": [
+      "from django.contrib import admin",
+      "from django.urls import include, path",
+      "urlpatterns = [",
+      "    path('api-auth/', include('rest_framework.urls'), name='rest_framework'),",
+      "    path('admin/', admin.site.urls, name='admin'),",
+      "    path('', include('${app_name}.urls'), name='api')",
+      "]"
+    ]
+  }
+}
