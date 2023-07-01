@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-ophfj%^#-ar@=fg$%k*3&%y$uv*4s#$*pp!0%a%6%4g6gstyx0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["coogan-whisper.onrender.com", "localhost"]
+ALLOWED_HOSTS = ["coogan-whisper.onrender.com", "localhost",
+                 "coogan-research-production.up.railway.app"]
 
 
 # Application definition
