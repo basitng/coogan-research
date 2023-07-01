@@ -1,5 +1,5 @@
 aiohttp==3.8.4
-assemblyai==0.12.0
+assemblyai
 aiosignal==1.3.1
 asgiref==3.7.2
 async-timeout==4.0.2
