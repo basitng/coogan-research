@@ -49,3 +49,6 @@ urllib3==1.26.16
 whitenoise
 yarl
 gunicorn
+httpx
+pydantic
+websockets
