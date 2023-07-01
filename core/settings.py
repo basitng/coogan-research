@@ -15,7 +15,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    "crylow.onrender.com", "localhost"]
+    "coogan-whisper.onrender.com", "localhost"]
 
 # Application definition
 INSTALLED_APPS = [
