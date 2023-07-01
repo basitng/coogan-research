@@ -174,3 +174,8 @@ cloudinary.config(
     api_key='727994197945152',
     api_secret='dpYf1eEC3qgeaK1qwzJgZOpIlB0'
 )
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
