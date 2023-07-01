@@ -41,7 +41,7 @@ class VideoUploadView(APIView):
             'video_url': video_url,
             'transcript': transcript
         }
-        serializer = VideoFileSerializer(data)
+        serializer = VideoFileSerializer(data=data)
         image_links = []
 
         csv_path = "activity.csv"
