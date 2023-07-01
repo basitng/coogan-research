@@ -1,16 +1,16 @@
 Number,Sentence,Prompt,Image Link
-1," Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React Query.",1. An astonishing image of Vishwas teaching people on React Query features with the clear sky in the background.
-2,"In this introductory video, we will talk about the what and why of React Query and in the rest of the series, we will explore the different features it provides.",2. An exciting mid-way image of students attentively listening to Vishwas explaining categorizing server and client state.
-3,Now what I'm trying to do is make this channel a one stop shop for everything related to React.,3. An impressive image of Vishwas demonstrating the use of React Query for data fetching in the mid of a dense forest.
-4,"So far, we have tutorials on React Fundamentals and Advanced Topics, React Hooks, React Redux, React Formic, React Storybook, React Render, Practical React, React Table and React Type Script.",4. A thrilling image of Vishwas talking about creating reusable query hooks with a breathtaking view of mountains in the background.
-5,"To add to this list, we are going to learn about the React Query package.",5. An electrifying image of Vishwas showing a hands-on example of paginated queries with the lush greenery of nature.
-6,Let's begin with the what.,6. An amazing image of students being engrossed in the demonstration of working with React Query Dev tools over a huge waterfall.
-7,What is React Query?,7. An awe-inspiring image of Vishwas discussing the use of Axios Interceptor with a stunning landscape in the background.
-8,"Well, it is a library for fetching data in a React application.",8. A mind-blowing image of Vishwas narrating the importance of React Query package for data management amidst a beautiful lake.
-9,Now you might wonder why would you need a library for data fetching?,9. A mesmerizing image of students understanding the use of mutations for data updating while cliff diving in a serene lake.
-10,"Since React is a UI library, there is no specific pattern for data fetching.",10. A breathtaking container of Vishwas explaining the need for understanding React fundamentals with snow capped mountains in the background.
-11,"What we typically do is make use of use effect hook for data fetching and use state hook to maintain component state like loading, error or the resulting data.",11. An intriguing image of Vishwas showcasing the use of optimistic updates for data fetching from the peak of a hill.
-12,"If the data is needed throughout the app, we tend to use state management libraries.",12. An astonishing image of Vishwas demonstrating the use of React Formic & Storybook for data fetching over a brilliant sunset.
-13,But what is important to note here is that most of the state management libraries are good for working with client state.,13. A captivating image of students being enthralled by the narration of efficient data fetching with React Render at a desert.
-14,State like theme for the application or whether a model is open.,14. An astounding image of Vishwas teaching the basics of React Hooks and its implementation for data fetching while standing on a beach.
-15,They are not great for working with asynchronous or server state.,15. A spectacular image of students diligently understanding the best practices of React TypeScript along with the stunning view of a forest.
+1,"Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React query.",1. A student going through their notes in the middle of studying for the React Query exam
+2,In this introductory video we will talk about the what and why of React query and in the rest of the series we will explore the different features it provides.,2. A person downloading the React Query tutorial from a laptop while on the train
+3,"Now, what I'm trying to do is make this channel a onestop shop for everything related to React.",3. A person jotting down notes while discussing React Query features with a colleague in a cafe
+4,So far we have tutorials on react fundamentals and advanced topics.,4. Two friends comparing React Query notes over a cup of coffee outside
+5,"React hooks, react, redux, react formic, react storybook, react, render practical, react, react table and react TypeScript.",5. People scrolling through the React Query package options during a break in the library
+6,To add to this list we are going to learn about the React query package.,6. A person typing React Query DevTools code in the middle of the night at a bus stop
+7,Let's begin with the what?,7. A family discussing React Query features around the dinner table
+8,What is react query?,8. A group of friends going through React Query tutorials together in a park
+9,"Well, it is a library for fetching data in a React application.",9. A student wearing headphones while studying React Query in the back of a bus
+10,Now you might wonder why would you need a library for data fetching?,10. People in a classroom eagerly listening to a lecture on React Query
+11,"Since React is a UI library, there is no specific pattern for data fetching.",11. A group of friends coding React Query at their favorite cafe
+12,What we typically do is make use of Use effect hook for data fetching and use state hook to maintain component state like loading error or the resulting data if the data is needed throughout the app.,12. A person checking their laptop for React Query updates while eating lunch on a bench outside
+13,We tend to use state management libraries.,13. A hiker taking a break to research React Query features while admiring the view
+14,But what is important to note here is that most of the state management libraries are good for working with client state like theme for the application or whether a model is open.,14. A person searching for React Query tutorials on their phone while commuting on the subway
+15,They are not great for working with Asynchronous or Server State.,15. A person sharing notes about React Query with a study partner in a quiet library corner

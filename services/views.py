@@ -9,6 +9,8 @@ from utils.create_vtt import textToVTT
 from utils.extract_sentence import get_sentences
 from utils.prompter import Prompter
 from utils.send_email import send_email
+import assemblyai as aai
+aai.settings.api_key = "48c9dd4c9e274c4795ede224dea42b4e"
 
 
 class GetVideo(APIView):
@@ -42,6 +44,8 @@ class VideoUploadView(APIView):
             'transcript': transcript
         }
         serializer = VideoFileSerializer(data=data)
+        serializer.is_valid()  # Call is_valid() before accessing serializer.data
+
         image_links = []
 
         csv_path = "activity.csv"

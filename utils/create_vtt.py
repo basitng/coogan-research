@@ -1,20 +1,13 @@
-import datetime
 import whisper
+import datetime
+import assemblyai as aai
+aai.settings.api_key = "48c9dd4c9e274c4795ede224dea42b4e"
 
 
-def textToVTT(result, save_format):
-    model = whisper.load_model("base.en")
-    result = model.transcribe(
-        result)
+def textToVTT(url, save_format):
+    transcriber = aai.Transcriber()
+    transcript = transcriber.transcribe(url)
 
     with open(save_format, "w") as file:
-        for indx, segment in enumerate(result['segments']):
-            file.write(str(indx + 1) + '\n')
-            # timestamp
-            file.write(
-                str(datetime.timedelta(seconds=segment['start'])) +
-                ' --> ' +
-                str(datetime.timedelta(seconds=segment['end'])) +
-                '\n')
-            file.write(segment['text'].strip() + '\n')
-        return result['text']
+        file.write(transcript.export_subtitles_vtt())
+        return transcript.text
