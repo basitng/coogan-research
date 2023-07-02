@@ -1,13 +1,12 @@
-import whisper
-import datetime
-import assemblyai as aai
-aai.settings.api_key = "48c9dd4c9e274c4795ede224dea42b4e"
+
+from utils.assemblyai import Assemblyai
 
 
 def textToVTT(url, save_format):
-    transcriber = aai.Transcriber()
-    transcript = transcriber.transcribe(url)
+    assembly = Assemblyai(url=url)
+    transcript = assembly.Transcriber()
+    print("🚀 ~ file: create_vtt.py:8 ~ transcript:", transcript)
 
     with open(save_format, "w") as file:
-        file.write(transcript.export_subtitles_vtt())
-        return transcript.text
+        file.write(transcript['export_subtitles_vtt'])
+        return transcript['text']

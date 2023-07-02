@@ -1,25 +1,25 @@
 WEBVTT
 
-00:00.970 --> 00:04.782
-Hey everyone, my name is Vishwas and welcome to a brand new
+00:00.970 --> 00:04.174
+Hey everyone, my name is Vishwas and welcome to a
 
-00:04.836 --> 00:07.790
-tutorial series on React query.
+00:04.212 --> 00:07.790
+brand new tutorial series on React query.
 
 00:08.850 --> 00:12.638
 In this introductory video we will talk about the what and why
 
-00:12.724 --> 00:15.866
-of React query and in the rest of the series
+00:12.724 --> 00:16.462
+of React query and in the rest of the series we will
 
-00:15.978 --> 00:19.630
-we will explore the different features it provides.
+00:16.516 --> 00:19.630
+explore the different features it provides.
 
-00:20.770 --> 00:24.474
-Now, what I'm trying to do is make this channel a onestop
+00:20.770 --> 00:24.950
+Now, what I'm trying to do is make this channel a onestop shop
 
-00:24.522 --> 00:27.510
-shop for everything related to React.
+00:25.060 --> 00:27.510
+for everything related to React.
 
 00:28.410 --> 00:32.342
 So far we have tutorials on react fundamentals and
@@ -45,29 +45,29 @@ React query package.
 00:53.010 --> 00:56.478
 Let's begin with the what? What is
 
-00:56.564 --> 01:00.782
-react query? Well, it is a library for
+00:56.564 --> 00:59.886
+react query? Well, it is a
 
-01:00.836 --> 01:03.140
-fetching data in a React application.
+00:59.908 --> 01:03.140
+library for fetching data in a React application.
 
 01:04.550 --> 01:08.338
 Now you might wonder why would you need a library for
 
-01:08.424 --> 01:11.954
-data fetching? Since React is
+01:08.424 --> 01:12.574
+data fetching? Since React is a UI
 
-01:11.992 --> 01:15.970
-a UI library, there is no specific pattern
+01:12.622 --> 01:16.742
+library, there is no specific pattern for data
 
-01:16.050 --> 01:20.150
-for data fetching. What we typically do is
+01:16.796 --> 01:20.454
+fetching. What we typically do is make
 
-01:20.220 --> 01:24.022
-make use of Use effect hook for data fetching and
+01:20.492 --> 01:24.342
+use of Use effect hook for data fetching and use
 
-01:24.076 --> 01:27.998
-use state hook to maintain component state like loading
+01:24.396 --> 01:27.998
+state hook to maintain component state like loading
 
 01:28.114 --> 01:32.042
 error or the resulting data if the data
@@ -75,23 +75,23 @@ error or the resulting data if the data
 01:32.096 --> 01:35.734
 is needed throughout the app. We tend to use state management
 
-01:35.782 --> 01:39.526
-libraries. But what is important to note
+01:35.782 --> 01:39.226
+libraries. But what is important to
 
-01:39.558 --> 01:43.178
-here is that most of the state management libraries
+01:39.248 --> 01:43.582
+note here is that most of the state management libraries are
 
-01:43.274 --> 01:47.950
-are good for working with client state like
+01:43.636 --> 01:47.950
+good for working with client state like
 
 01:48.020 --> 01:52.080
 theme for the application or whether a model is open.
 
-01:52.710 --> 01:56.370
-They are not great for working with Asynchronous or
+01:52.710 --> 01:56.894
+They are not great for working with Asynchronous or Server
 
-01:56.440 --> 02:00.286
-Server State. And this is because server
+01:56.942 --> 02:00.286
+State. And this is because server
 
 02:00.318 --> 02:03.700
 state is very different to client state.
@@ -111,26 +111,23 @@ remotely in a database perhaps and requires
 02:20.374 --> 02:24.010
 Asynchronous APIs for fetching or Updating.
 
-02:25.070 --> 02:28.378
-Also, server state, unlike client state
+02:25.070 --> 02:29.334
+Also, server state, unlike client state has shared
 
-02:28.464 --> 02:32.046
-has shared ownership data can
+02:29.382 --> 02:33.102
+ownership data can be updated by
 
-02:32.068 --> 02:35.482
-be updated by someone else without your knowledge,
+02:33.156 --> 02:36.590
+someone else without your knowledge, which can quickly
 
-02:35.626 --> 02:38.702
-which can quickly lead to UI data that is not
+02:36.660 --> 02:40.800
+lead to UI data that is not in sync with the remote data.
 
-02:38.756 --> 02:40.800
-in sync with the remote data.
+02:41.810 --> 02:45.790
+It becomes even more challenging when you have to deal with
 
-02:41.810 --> 02:45.390
-It becomes even more challenging when you have to deal
-
-02:45.460 --> 02:49.346
-with caching deduping multiple requests for the
+02:45.860 --> 02:49.346
+caching deduping multiple requests for the
 
 02:49.368 --> 02:53.150
 same data, updating still data in the background,
@@ -147,35 +144,35 @@ to cater to all these in an application,
 03:03.450 --> 03:07.254
 it requires significant time and effort to do it
 
-03:07.292 --> 03:10.458
-all by yourself. Or you
+03:07.292 --> 03:10.634
+all by yourself. Or you can
 
-03:10.464 --> 03:13.750
-can take the smarter approach and use a library
+03:10.672 --> 03:14.362
+take the smarter approach and use a library which makes
 
-03:13.830 --> 03:17.610
-which makes handling all these scenarios a walk in the park.
+03:14.416 --> 03:17.610
+handling all these scenarios a walk in the park.
 
 03:18.030 --> 03:21.722
 And you have probably guessed it, that library is React
 
-03:21.786 --> 03:25.374
-Query. I will even go to the extent of
+03:21.786 --> 03:25.082
+Query. I will even go to the extent
 
-03:25.412 --> 03:29.178
-saying even if you don't have complex requirements
+03:25.146 --> 03:28.346
+of saying even if you don't have complex
 
-03:29.274 --> 03:32.946
-like the ones I've stated here, watch this series and
+03:28.458 --> 03:31.200
+requirements like the ones I've stated here,
 
-03:32.968 --> 03:36.594
-give React query a try for your data fetching needs because
+03:31.570 --> 03:34.754
+watch this series and give React query a try for
 
-03:36.632 --> 03:40.114
-you'll not want to go back. That is how amazing
+03:34.792 --> 03:38.260
+your data fetching needs because you'll not want to go back.
 
-03:40.232 --> 03:41.700
-this library is.
+03:38.630 --> 03:41.700
+That is how amazing this library is.
 
 03:43.110 --> 03:46.806
 Well, if I've convinced you, here are some of the
@@ -189,14 +186,14 @@ query package. We're going to learn how
 03:53.868 --> 03:58.202
 to make basic queries, how to pull data work
 
-03:58.256 --> 04:01.386
-with React query DevTools, how to
+03:58.256 --> 04:02.294
+with React query DevTools, how to create reusable
 
-04:01.408 --> 04:04.730
-create reusable query hooks for data fetching,
+04:02.342 --> 04:06.294
+query hooks for data fetching, how to query
 
-04:05.470 --> 04:09.318
-how to query by ID, parallel queries,
+04:06.342 --> 04:09.318
+by ID, parallel queries,
 
 04:09.494 --> 04:12.590
 dynamic queries, dependent queries,
@@ -207,53 +204,56 @@ infinite and paginated queries.
 04:16.850 --> 04:20.094
 We also need to keep in mind that server state is
 
-04:20.132 --> 04:24.530
-not just fetching, it also needs updating.
+04:20.132 --> 04:23.618
+not just fetching, it also needs
 
-04:25.270 --> 04:29.166
-We will learn how to update data using mutations,
+04:23.704 --> 04:27.586
+updating. We will learn how to update data
 
-04:29.358 --> 04:33.570
-how to invalidate queries when a mutation is successful,
+04:27.688 --> 04:31.230
+using mutations, how to invalidate queries
 
-04:33.910 --> 04:37.414
-optimistic Updates and we will wind up the series with
+04:31.310 --> 04:35.470
+when a mutation is successful, optimistic Updates
 
-04:37.452 --> 04:41.334
-a video on how to set up an axios interceptor and
+04:35.630 --> 04:38.934
+and we will wind up the series with a video on how to
 
-04:41.372 --> 04:44.806
-work with React query. By the
+04:38.972 --> 04:42.354
+set up an axios interceptor and work with React
 
-04:44.828 --> 04:48.434
-end of the series, you'll have a really good knowledge of React
+04:42.402 --> 04:45.986
+query. By the end of the series,
 
-04:48.482 --> 04:51.030
-query and data fetching in React.
+04:46.098 --> 04:50.114
+you'll have a really good knowledge of React query and data fetching
 
-04:51.690 --> 04:55.302
-Hopefully, you will also be in a position to recommend this
+04:50.162 --> 04:53.446
+in React. Hopefully, you will also be in
 
-04:55.356 --> 04:59.366
-library at work and will be something your teammates appreciate as
+04:53.468 --> 04:57.206
+a position to recommend this library at work and will
 
-04:59.388 --> 05:02.318
-well. Before we start though,
+04:57.228 --> 04:59.960
+be something your teammates appreciate as well.
 
-05:02.404 --> 05:05.806
-let me tell you that to make the most out of this
+05:01.010 --> 05:04.366
+Before we start though, let me tell you that to
 
-05:05.828 --> 05:09.722
-series, you must know the fundamentals of React,
+05:04.388 --> 05:07.742
+make the most out of this series, you must know
 
-05:09.866 --> 05:13.246
-including React hooks. If you are new to
+05:07.796 --> 05:11.870
+the fundamentals of React, including React hooks.
 
-05:13.268 --> 05:17.002
-React, please make sure to go through the fundamentals and the hooks series
+05:12.370 --> 05:15.802
+If you are new to React, please make sure to go through the fundamentals
 
-05:17.066 --> 05:20.350
-on this channel. Alright,
+05:15.866 --> 05:18.160
+and the hooks series on this channel.
 
-05:20.500 --> 05:23.680
-with this in mind, let's get started in the next video.
+05:19.650 --> 05:23.054
+Alright, with this in mind, let's get started in the next
+
+05:23.092 --> 05:23.680
+video.
