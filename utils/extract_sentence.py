@@ -1,17 +1,8 @@
-import nltk
-from nltk.tokenize import sent_tokenize
-nltk.download()
+import re
 
 
 def get_sentences(content):
-    sentences = sent_tokenize(content)
-    print("🚀 ~ file: extract_sentence.py:7 ~ sentences:", sentences)
+    # Use regex pattern to match sentences
+    pattern = r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s'
+    sentences = re.split(pattern, content)
     return sentences
-
-
-# content = '''Is this a sentence now? Yeah it is a sentence'''
-
-# sentences = get_sentences(content)
-
-# for sentence in sentences:
-#     print(sentence)
