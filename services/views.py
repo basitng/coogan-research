@@ -20,15 +20,15 @@ class GetVideo(APIView):
 
 class VideoUploadView(APIView):
     def post(self, request, *args, **kwargs):
-        video_file = request.FILES.get('video')
-        print("🚀 ~ file: views.py:22 ~ video_file:", video_file)
-        response = cloudinary.uploader.upload(
-            file=video_file,
-            resource_type='video',
-            folder='videos/'
-        )
+        # video_file = request.FILES.get('video')
+        # print("🚀 ~ file: views.py:22 ~ video_file:", video_file)
+        # response = cloudinary.uploader.upload(
+        #     file=video_file,
+        #     resource_type='video',
+        #     folder='videos/'
+        # )
 
-        video_url = response['secure_url']
+        video_url = "C:\courses\Tech\JavaScript\React\React query\React Query Tutorial - 1 - Introduction.mp4"
         transcript_file = "transcript.vtt"
         transcript = textToVTT(video_url, transcript_file)
         if transcript == "":
