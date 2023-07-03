@@ -1,787 +1,259 @@
 WEBVTT
 
-00:00.250 --> 00:03.870
-How much money do you make? What was it like meeting Elon Musk?
+00:00.970 --> 00:04.506
+Hey everyone, my name is Vishwas and welcome to a brand
 
-00:04.690 --> 00:08.158
-Hey, welcome back to the Channel. Little bit of a different video today. I thought
+00:04.538 --> 00:07.790
+new tutorial series on React query.
 
-00:08.164 --> 00:11.598
-I'd do a Q and A. The channel's grown a ton, and I thought it'd
+00:08.850 --> 00:12.638
+In this introductory video we will talk about the what and why
 
-00:11.604 --> 00:14.894
-be interesting just to answer some questions. So let's kick it off. Are you doing
+00:12.724 --> 00:15.866
+of React query and in the rest of the series
 
-00:14.932 --> 00:18.254
-this unscripted video because you got COVID and you didn't have time
+00:15.978 --> 00:19.630
+we will explore the different features it provides.
 
-00:18.292 --> 00:22.126
-to make a full video? That's ridiculous. I would I can't believe someone would
+00:20.770 --> 00:24.474
+Now, what I'm trying to do is make this channel a onestop
 
-00:22.148 --> 00:25.526
-ask that. Are you Tom Holland's older brother? I do get that
+00:24.522 --> 00:27.510
+shop for everything related to React.
 
-00:25.548 --> 00:28.754
-a lot. No, I'm not related to him, but I think it's a compliment.
+00:28.410 --> 00:32.002
+So far we have tutorials on react fundamentals
 
-00:28.802 --> 00:31.714
-He's a pretty talented guy. What is your educational background?
+00:32.066 --> 00:35.554
+and advanced topics. React hooks, react,
 
-00:31.842 --> 00:35.366
-So I grew up in Pasadena. I went to high school out here,
+00:35.602 --> 00:39.190
+redux, react formic, react storybook,
 
-00:35.388 --> 00:38.834
-and then I went to college in Boston. I studied economics
+00:39.350 --> 00:42.230
+react, render practical, react,
 
-00:38.882 --> 00:42.454
-at Northeastern University, and I thought I was going to go into finance,
+00:42.390 --> 00:45.850
+react table and react TypeScript.
 
-00:42.582 --> 00:46.698
-but in my junior and senior year, I started using Python to
+00:46.830 --> 00:50.206
+To add to this list we are going to learn about the
 
-00:46.784 --> 00:50.378
-run some more complex economic models. Once Excel kind of
+00:50.228 --> 00:51.790
+React query package.
 
-00:50.384 --> 00:53.966
-topped out and I kind of saw how cool programming was, then I kind of
+00:53.010 --> 00:56.478
+Let's begin with the what? What is
 
-00:53.988 --> 00:57.610
-shifted everything and went into startups. As soon as I graduated,
+00:56.564 --> 00:59.886
+react query? Well, it is a
 
-00:57.690 --> 01:01.210
-I grabbed a friend from high school, moved to Silicon Valley,
+00:59.908 --> 01:03.140
+library for fetching data in a React application.
 
-01:01.290 --> 01:04.574
-and kind of did the traditional startup school y combinator
+01:04.550 --> 01:08.338
+Now you might wonder why would you need a library for
 
-01:04.622 --> 01:08.526
-thing. No formal training in technology, really, or I didn't
+01:08.424 --> 01:11.630
+data fetching? Since React
 
-01:08.558 --> 01:12.018
-study computer science. I just kind of picked up software engineering and
+01:11.710 --> 01:15.970
+is a UI library, there is no specific pattern
 
-01:12.024 --> 01:15.698
-then eventually started programming full time, then ran a team.
+01:16.050 --> 01:20.150
+for data fetching. What we typically do is
 
-01:15.784 --> 01:19.574
-And now I don't program that much, but I still have software developers that
+01:20.220 --> 01:23.586
+make use of Use effect hook for data fetching
 
-01:19.692 --> 01:23.074
-report into me, and I feel comfortable managing software engineers
+01:23.698 --> 01:27.998
+and use state hook to maintain component state like loading
 
-01:23.122 --> 01:26.982
-since I do know enough about coding. That's kind of the second question here.
+01:28.114 --> 01:31.674
+error or the resulting data if
 
-01:27.116 --> 01:31.174
-Can you code? Yes. I definitely feel comfortable
+01:31.712 --> 01:35.734
+the data is needed throughout the app. We tend to use state management
 
-01:31.222 --> 01:35.206
-saying I can code. I'm not an amazing programmer or anything. I'm not developing entirely
+01:35.782 --> 01:39.526
+libraries. But what is important to note
 
-01:35.238 --> 01:38.374
-new algorithms. But I feel comfortable writing
+01:39.558 --> 01:43.582
+here is that most of the state management libraries are
 
-01:38.422 --> 01:41.706
-Python and getting what I need to get done on
+01:43.636 --> 01:47.950
+good for working with client state like
 
-01:41.728 --> 01:45.178
-the Internet and building things. I know a little bit of JavaScript. I've messed
+01:48.020 --> 01:51.390
+theme for the application or whether a model is
 
-01:45.194 --> 01:48.574
-around with closure to learn what a lisp is and how that
+01:51.460 --> 01:54.962
+open. They are not great for working with
 
-01:48.612 --> 01:52.042
-works. And I've written some objective C for iOS, and I've touched
+01:55.016 --> 01:57.540
+Asynchronous or Server State.
 
-01:52.106 --> 01:55.294
-most of the programming language a little bit. But Python's the one that I keep
+01:58.150 --> 02:01.682
+And this is because server state is very
 
-01:55.332 --> 01:58.786
-coming back to because it's so fun and so easy to use. Why did you
+02:01.736 --> 02:03.700
+different to client state.
 
-01:58.808 --> 02:02.530
-leave Soyland? So Soylent was my first startup, was there from
+02:04.970 --> 02:09.222
+Client state is persisted in your app memory and
 
-02:02.600 --> 02:06.258
-2012 till about 2016. 2017. Great experience.
+02:09.276 --> 02:12.390
+accessing or updating it is synchronous.
 
-02:06.344 --> 02:10.438
-The company grew tremendously. We sold a ton of product,
+02:13.290 --> 02:17.138
+Server state on the other hand, is persisted remotely
 
-02:10.604 --> 02:13.814
-millions of dollars in sales the first month,
+02:17.234 --> 02:20.278
+in a database perhaps and requires
 
-02:14.012 --> 02:17.574
-and then just kind of grew from there. There were 50 people at the company
+02:20.374 --> 02:24.010
+Asynchronous APIs for fetching or Updating.
 
-02:17.612 --> 02:20.918
-when I left, and that's a big part of why I decided to move on
+02:25.070 --> 02:28.378
+Also, server state, unlike client state
 
-02:20.924 --> 02:23.706
-and do a new startup. The company had grown so much, we were kind of
+02:28.464 --> 02:31.726
+has shared ownership data
 
-02:23.728 --> 02:27.542
-out of that innovation mode, and we were more in execution.
+02:31.828 --> 02:35.482
+can be updated by someone else without your knowledge,
 
-02:27.606 --> 02:31.386
-Let's just get the product into every store. Let's just
+02:35.626 --> 02:39.354
+which can quickly lead to UI data that is not in sync
 
-02:31.488 --> 02:34.474
-distribute. Distribute. That's the name of the game. So we hired a bunch of people
+02:39.402 --> 02:44.106
+with the remote data. It becomes even more challenging
 
-02:34.512 --> 02:37.662
-who know distribution really well and kind of let them take over.
+02:44.298 --> 02:48.094
+when you have to deal with caching deduping multiple
 
-02:37.716 --> 02:40.846
-And then me and one of my co founders at Soylent and our
+02:48.142 --> 02:51.922
+requests for the same data, updating still data
 
-02:40.868 --> 02:43.934
-creative director and our head of R and D were able to go and start
+02:51.976 --> 02:55.198
+in the background, performance optimizations when
 
-02:43.972 --> 02:47.626
-this next company, Lucy, that helps people quit smoking. It sells nicotine
+02:55.224 --> 02:58.710
+it comes to pagination and lazy loading, et cetera.
 
-02:47.658 --> 02:51.106
-products and that company was just not, that idea was not appropriate for
+02:59.850 --> 03:03.080
+If you have to cater to all these in an application,
 
-02:51.128 --> 02:53.586
-the soil brand, so it had to be a different company. So we were able
+03:03.450 --> 03:07.046
+it requires significant time and effort to do
 
-02:53.608 --> 02:57.246
-to step back and go build something new. It's always tough kind of leaving
+03:07.068 --> 03:10.634
+it all by yourself. Or you can
 
-02:57.358 --> 03:01.014
-this family that you've built and stepping back from this whole team
+03:10.672 --> 03:14.362
+take the smarter approach and use a library which makes
 
-03:01.052 --> 03:05.490
-that you've built, but it's kind of a natural part of the startup lifecycle.
+03:14.416 --> 03:17.610
+handling all these scenarios a walk in the park.
 
-03:05.650 --> 03:08.758
-How much money do you make? This is a very funny question.
+03:18.030 --> 03:22.510
+And you have probably guessed it, that library is React Query.
 
-03:08.844 --> 03:11.978
-It's very gauche to ask, but on the internet when you put videos out,
+03:23.490 --> 03:26.926
+I will even go to the extent of saying even if
 
-03:12.064 --> 03:15.658
-people naturally ask you this type of thing. So as an
+03:26.948 --> 03:30.554
+you don't have complex requirements like the ones I've stated
 
-03:15.664 --> 03:19.562
-entrepreneur, I don't make a lot of money from my businesses because
+03:30.602 --> 03:34.418
+here, watch this series and give React query a try
 
-03:19.696 --> 03:23.130
-I am hoping to sell the business and then I have equity in the business,
+03:34.504 --> 03:38.260
+for your data fetching needs because you'll not want to go back.
 
-03:23.200 --> 03:26.698
-so I usually benchmark to what other startups are doing. And it's
+03:38.630 --> 03:41.700
+That is how amazing this library is.
 
-03:26.714 --> 03:30.286
-not a lot like pre series seed. Like when the
+03:43.110 --> 03:47.314
+Well, if I've convinced you, here are some of the features
 
-03:30.308 --> 03:33.278
-company has not raised a lot of money, I might pay myself 60K, that's what
+03:47.362 --> 03:51.510
+we are going to be implementing in this series with the React query package.
 
-03:33.284 --> 03:36.766
-I've paid myself in the past. Then post series seed,
+03:52.570 --> 03:55.490
+We're going to learn how to make basic queries,
 
-03:36.878 --> 03:40.418
-series A territory a little bit over.
+03:55.650 --> 03:59.174
+how to pull data work with React query
 
-03:40.424 --> 03:44.498
-Then once the company is really growing, maybe two hundred k. But really every
+03:59.222 --> 04:03.062
+DevTools, how to create reusable query hooks
 
-03:44.664 --> 03:48.194
-dollar that you pull out of the business while you're in that growth mode is
+04:03.126 --> 04:06.554
+for data fetching, how to query by
 
-03:48.232 --> 03:51.862
-a dollar that you could be spending on marketing or hiring someone or your product
+04:06.592 --> 04:10.890
+ID, parallel queries, dynamic queries,
 
-03:51.916 --> 03:55.238
-or engineering. So it's really risky to take too much money out
+04:11.050 --> 04:14.922
+dependent queries, infinite and paginated
 
-03:55.244 --> 03:58.150
-of the business when you're still in that growth stage.
+04:14.986 --> 04:18.510
+queries. We also need to keep in mind
 
-03:59.770 --> 04:03.122
-The real benefit of all of this stuff is you want to
+04:18.580 --> 04:21.790
+that server state is not just fetching,
 
-04:03.196 --> 04:06.026
-sell the business for a lot of money and then you own equity. So the
+04:22.210 --> 04:25.794
+it also needs updating. We will
 
-04:06.048 --> 04:09.546
-real question here, the better question is how much equity do you have
+04:25.832 --> 04:29.166
+learn how to update data using mutations,
 
-04:09.648 --> 04:13.326
-in your companies? And I always try to find an
+04:29.358 --> 04:32.562
+how to invalidate queries when a mutation is
 
-04:13.348 --> 04:16.714
-even split between my co founders on the equity
+04:32.616 --> 04:36.226
+successful, optimistic Updates and we will
 
-04:16.762 --> 04:19.966
-front, that's kind of best practice and that's what a lot of
+04:36.248 --> 04:39.574
+wind up the series with a video on how to set up an
 
-04:19.988 --> 04:23.630
-people in Silicon Valley preach. Doesn't always happen.
+04:39.612 --> 04:43.110
+axios interceptor and work with React query.
 
-04:23.700 --> 04:27.038
-Sometimes someone's worked a little bit harder, but in general that's kind of
+04:44.330 --> 04:47.794
+By the end of the series, you'll have a really good knowledge
 
-04:27.124 --> 04:30.158
-where I've worked to get to. What do you do in your free time?
+04:47.842 --> 04:51.030
+of React query and data fetching in React.
 
-04:30.324 --> 04:32.654
-So I don't have a lot of free time because I have a full time
+04:51.690 --> 04:54.886
+Hopefully, you will also be in a position to recommend
 
-04:32.692 --> 04:35.718
-job with my startup and then I have this YouTube channel and then I
+04:54.988 --> 04:58.530
+this library at work and will be something your teammates
 
-04:35.724 --> 04:39.538
-also have a ten month old son at home and he's
+04:58.610 --> 05:02.318
+appreciate as well. Before we start though,
 
-04:39.554 --> 04:42.486
-obviously a lot of work. But when I do have free time, I mean,
+05:02.404 --> 05:05.806
+let me tell you that to make the most out of this
 
-04:42.508 --> 04:45.766
-I love to read, I love to play video games, I love to listen to
+05:05.828 --> 05:09.722
+series, you must know the fundamentals of React,
 
-04:45.788 --> 04:49.302
-podcasts and kind of just research technologies and learn about
+05:09.866 --> 05:13.246
+including React hooks. If you are new to
 
-04:49.356 --> 04:52.810
-things. But it's mostly a lot of work these days.
+05:13.268 --> 05:16.442
+React, please make sure to go through the fundamentals and the hooks
 
-04:52.960 --> 04:56.262
-Try and just kind of like, talk to people, have interesting conversations
+05:16.506 --> 05:18.160
+series on this channel.
 
-04:56.326 --> 04:59.818
-about technology in the future. That's like most of my free time. What are
+05:19.650 --> 05:22.766
+Alright, with this in mind, let's get started in
 
-04:59.824 --> 05:03.574
-your favorite books? It's hard to name a specific favorite
-
-05:03.622 --> 05:07.370
-book, but I really liked Superfounders by Ali Tamasib.
-
-05:07.450 --> 05:11.390
-He's a venture capitalist and he crunched all this data about what makes
-
-05:11.460 --> 05:14.766
-a successful founder. Like a founder that creates a billion dollar
-
-05:14.798 --> 05:18.882
-company or bigger. It disproves a lot of misconceptions. It's very
-
-05:18.936 --> 05:22.306
-encouraging because kind of no matter what your background is,
-
-05:22.408 --> 05:26.014
-there's data that supports that you can be a massively successful
-
-05:26.062 --> 05:29.906
-founder. So it's very inspirational book, but also very data driven,
-
-05:29.938 --> 05:33.474
-which I really liked. And then I really enjoyed Tyler Cowen's stubborn
-
-05:33.522 --> 05:36.918
-attachments, which was published by Stripe Press, which is really cool.
-
-05:37.004 --> 05:40.662
-And it just kind of talks about how we should think about the modern
-
-05:40.726 --> 05:44.502
-economy and capitalism and economics
-
-05:44.566 --> 05:48.246
-from a very aspirational perspective.
-
-05:48.278 --> 05:51.258
-And it's just a great book. It's a very quick read as well.
-
-05:51.344 --> 05:54.750
-What YouTubers do you watch? This is a great question.
-
-05:54.900 --> 05:58.606
-I love corridor crew. I watch every single one of their videos. They're just
-
-05:58.628 --> 06:02.334
-incredible. I have played around with Visual effects. I know
-
-06:02.372 --> 06:05.758
-a little bit of After Effects in Cinema 4D, so I know the tools
-
-06:05.774 --> 06:09.278
-that they're using and it's just always really entertaining. Really great storytelling
-
-06:09.294 --> 06:12.494
-on that channel. Love them. Obviously watch. Like MKBHD.
-
-06:12.622 --> 06:16.030
-Obviously watch mr. Beast. Who doesn't? Smaller YouTubers.
-
-06:16.110 --> 06:19.734
-Obviously. Gary Tan is like the inspiration for my entire channel.
-
-06:19.852 --> 06:23.734
-I love what he does and I love him personally. And then I've been
-
-06:23.772 --> 06:27.186
-watching these interviews done by this guy, Jesse Michaels,
-
-06:27.378 --> 06:31.078
-that are just crazy. He interviews a lot of people about UFOs,
-
-06:31.254 --> 06:34.394
-but he also talks with crazy, really high profile tech people.
-
-06:34.432 --> 06:37.962
-He's super well connected in Silicon Valley, so I highly recommend his channel.
-
-06:38.096 --> 06:42.214
-And then I also like, g zero world. It's a bit more of a corporate
-
-06:42.262 --> 06:45.978
-channel, but it's run by this guy, Ian Bremmer. He's this political
-
-06:46.074 --> 06:49.018
-strategist. He's nonpartisan,
-
-06:49.114 --> 06:52.014
-but he's just trying to tell you what's going on in the world. And very,
-
-06:52.052 --> 06:55.598
-very informative videos, not clickbaity. He doesn't get a lot of views.
-
-06:55.694 --> 06:59.614
-But it's a really, really valuable channel if you're looking to understand kind of global
-
-06:59.662 --> 07:03.902
-politics, global economics in a way that's not controversial
-
-07:03.966 --> 07:07.746
-or like left wing or right wing. It's just here's
-
-07:07.778 --> 07:11.446
-what's actually happening in the world. So great channel. How do
-
-07:11.468 --> 07:15.990
-you make these videos? So I get this question a lot because
-
-07:16.140 --> 07:19.654
-it seems kind of crazy that someone could put out a video once
-
-07:19.692 --> 07:22.266
-a week and still have a full time job. So I have a team.
-
-07:22.368 --> 07:26.250
-I have a researcher who helps me write scripts and research
-
-07:26.320 --> 07:29.638
-facts and generate ideas. That's been really helpful.
-
-07:29.734 --> 07:33.366
-He doesn't help with every script, but on a few of them he's
-
-07:33.398 --> 07:37.134
-really, really nailed it. I use a teleprompter for most of these. That speeds things
-
-07:37.172 --> 07:40.618
-up. I typically write the scripts in Google Docs,
-
-07:40.634 --> 07:43.262
-and then I throw them up on the teleprompter, read them in there, and then
-
-07:43.316 --> 07:46.770
-I have a great editor who helps me combine everything
-
-07:46.840 --> 07:50.018
-and get all that great broll and add the music and kind of
-
-07:50.104 --> 07:53.406
-speed things up and clean up any mistakes. So that's
-
-07:53.438 --> 07:56.898
-been a huge benefit. Why did you start making YouTube videos?
-
-07:57.064 --> 08:01.142
-I love this question because it took me a long time to answer it myself.
-
-08:01.276 --> 08:04.278
-Basically, I was bored during the pandemic. I was locked down,
-
-08:04.364 --> 08:08.278
-didn't have anything to do. My wife was also pregnant, so I really had a
-
-08:08.284 --> 08:11.238
-lot of free time on my hands. For the first time in ten years of
-
-08:11.244 --> 08:14.602
-being an entrepreneur, all these cool people were hanging out in clubhouse, they were
-
-08:14.656 --> 08:17.834
-socializing. And I realized that I didn't really have a way to meet new
-
-08:17.872 --> 08:20.810
-people in technology, meet new founders, talk to people,
-
-08:20.960 --> 08:25.034
-and I was just kind of bored. So I decided to turn on the camera,
-
-08:25.082 --> 08:28.682
-start talking about things. The views started coming in. It was really, really positive.
-
-08:28.746 --> 08:32.046
-The comment section was always really, really positive. So I thought it was
-
-08:32.068 --> 08:35.406
-really cool. But now I'm thinking about it. Like, it's a great
-
-08:35.428 --> 08:38.306
-way to meet people. I think it's a great way to meet young founders that
-
-08:38.328 --> 08:42.098
-I can ultimately invest with or advise. I think
-
-08:42.104 --> 08:45.458
-it's just very important that we have more positive tech
-
-08:45.544 --> 08:48.546
-content on YouTube. If you look at a lot of the big tech channels,
-
-08:48.578 --> 08:52.070
-they're super negative. Every channel is like, theranos this,
-
-08:52.140 --> 08:55.030
-we work that. Like, blah, blah, blah. Every channel,
-
-08:55.100 --> 08:57.826
-everything's a scam, everything's a fraud.
-
-08:57.938 --> 09:00.954
-And that's true. There are some bad companies out there,
-
-09:00.992 --> 09:04.394
-but we don't need to highlight them 100%
-
-09:04.432 --> 09:07.130
-of the time. Obviously, the YouTube algorithm,
-
-09:07.630 --> 09:11.306
-it leans towards controversy. It loves controversy. People click on
-
-09:11.328 --> 09:15.274
-things that are scams and frauds and terrible destroyed the
-
-09:15.312 --> 09:18.590
-end of the world, like, very negative content. But I think it's really bad
-
-09:18.660 --> 09:21.582
-because I think there are problems in the world, and I think tech can be
-
-09:21.636 --> 09:24.650
-a solution to those problems in many, many situations.
-
-09:24.730 --> 09:27.906
-So I think we need more tech positive content, and that's a lot of what
-
-09:27.928 --> 09:31.234
-I'm trying to do with this channel. Will you invest in my company?
-
-09:31.432 --> 09:34.814
-Maybe it's happened. I've met a few people through YouTube
-
-09:34.862 --> 09:38.626
-that I've written angel checks into their companies. I don't
-
-09:38.658 --> 09:42.310
-do a ton of investing, but I like
-
-09:42.380 --> 09:46.214
-partnering with people that are super ambitious and working on really cool things. So if
-
-09:46.252 --> 09:50.186
-you want to pitch me, you can send me a brief description of what you're
-
-09:50.208 --> 09:53.642
-working on on Twitter. My DMs are open.
-
-09:53.776 --> 09:57.178
-You can also send me a deck or a doc or your website
-
-09:57.264 --> 10:00.746
-or something like that. Just don't ramble for a
-
-10:00.768 --> 10:03.786
-long time and try and tell me your whole life story,
-
-10:03.888 --> 10:06.842
-because it's really hard to respond to those types of messages.
-
-10:06.986 --> 10:10.494
-Now, I do think that you should be in a place where you are
-
-10:10.612 --> 10:14.126
-ready to take investment if you want to pitch me. Because a
-
-10:14.148 --> 10:17.518
-lot of people are still at the very early stages and they haven't really crystallized
-
-10:17.614 --> 10:21.506
-what the problem they're working on is, what the solution is. And you need
-
-10:21.528 --> 10:24.834
-to be able to tell if you have the
-
-10:24.872 --> 10:28.410
-skill set to go and build the solution that you're
-
-10:28.430 --> 10:31.666
-thinking of. Because I would love to build a time travel machine,
-
-10:31.698 --> 10:35.206
-but I have no experience in how to do
-
-10:35.228 --> 10:38.866
-that. So that would be a bad startup idea. Will you mentor me?
-
-10:38.908 --> 10:42.154
-I get this question a decent amount and the answer is
-
-10:42.272 --> 10:44.700
-probably not. Basically,
-
-10:45.230 --> 10:48.374
-I don't really do consulting, I don't really do mentorships.
-
-10:48.422 --> 10:52.042
-What I do is I invest in founders that are building companies.
-
-10:52.176 --> 10:55.662
-So if you're building a company and you think
-
-10:55.716 --> 10:58.926
-you'd like to work with me, reach out to me, we'll talk. And if I
-
-10:58.948 --> 11:02.638
-can invest, then I can mentor you for free. Actually, I'm giving you money and
-
-11:02.644 --> 11:05.774
-then you can call me whenever you want. But in terms of just
-
-11:05.812 --> 11:09.026
-like general mentorship, everything that I know I'm trying to put
-
-11:09.048 --> 11:12.846
-out on this channel for free, you can still ask me questions. You can DM
-
-11:12.878 --> 11:16.306
-me on Twitter and ask me a question. I might just answer it in
-
-11:16.328 --> 11:20.214
-a YouTube video instead of answering you directly. What technology
-
-11:20.332 --> 11:23.494
-are you most interested in right now? This is a good one.
-
-11:23.532 --> 11:27.398
-I got this after my 22 predictions of all the interesting
-
-11:27.484 --> 11:31.106
-tech in 2022. Basically, I think of there's three really
-
-11:31.148 --> 11:35.290
-interesting buckets that are going on right now. One is AI. Then there's space,
-
-11:35.360 --> 11:38.854
-like space travel, space exploration, everything that Elon's doing with SpaceX.
-
-11:38.982 --> 11:42.870
-And then there's crypto. And crypto obviously is like a huge trend.
-
-11:43.030 --> 11:46.318
-Everyone's talking about crypto. Out of those three buckets, I think they're all
-
-11:46.324 --> 11:49.694
-really interesting and I think they're all really impactful and important. But out of those
-
-11:49.732 --> 11:53.246
-three, AI is the one that is the most intriguing to me, just because
-
-11:53.268 --> 11:56.642
-that's the one that I've actually tinkered with. Like, I've written Python code
-
-11:56.696 --> 12:00.526
-that does AI stuff and I also can just immediately imagine
-
-12:00.638 --> 12:04.082
-how that's beneficial to me. Like, if I had a self driving car in my
-
-12:04.136 --> 12:07.586
-driveway, that would make my life better today. Whereas if
-
-12:07.608 --> 12:11.266
-you told me I could go to Mars, it'd be really, really cool. But that's
-
-12:11.298 --> 12:14.790
-a really harsh environment. I don't know that that's going to make my life better
-
-12:14.860 --> 12:18.134
-immediately. It's kind of unclear the value in the short
-
-12:18.172 --> 12:21.626
-term. And then with crypto, obviously you can make a ton of money, but there
-
-12:21.648 --> 12:24.986
-aren't that many people that are actually getting real tangible day
-
-12:25.008 --> 12:28.550
-to day value. They certainly are internationally.
-
-12:28.710 --> 12:31.914
-If you're in a country where there's a lot of hyperinflation, crypto can be great
-
-12:31.952 --> 12:35.946
-for you. Or if you're trying to transfer money across borders constantly
-
-12:35.978 --> 12:40.330
-and you need low fees, that's possible. Or if you're being deplatformed
-
-12:40.410 --> 12:43.486
-and you need a censorship resistant technology, like crypto could
-
-12:43.508 --> 12:47.582
-definitely deliver on that. But I'm in America, I'm not being deplatformed.
-
-12:47.726 --> 12:50.542
-I don't need to send money all over the world for really low fees.
-
-12:50.606 --> 12:54.322
-So all of the main crypto benefits to me aren't as
-
-12:54.376 --> 12:57.806
-impactful. It's cool that you could make money if you trade it effectively,
-
-12:57.838 --> 13:01.046
-but that's a lot less exciting than like, a robot that does my
-
-13:01.068 --> 13:04.690
-laundry or something like that. That's why I'm personally excited about AI.
-
-13:04.770 --> 13:08.258
-It just seems so intuitive that it would be beneficial.
-
-13:08.354 --> 13:11.722
-It's just like it's already here. We're using AI all the time.
-
-13:11.776 --> 13:15.530
-There's always a new app that's doing something with AI.
-
-13:16.110 --> 13:19.830
-That's why I just love it. What do you think about crypto, specifically crypto?
-
-13:19.910 --> 13:23.646
-Obviously the markets are in turmoil, everyone's losing a ton of money.
-
-13:23.748 --> 13:27.214
-I still think that crypto is cool and beneficial and
-
-13:27.252 --> 13:30.986
-worth pursuing and worth having. I just don't necessarily think it's
-
-13:31.098 --> 13:34.366
-the only thing that we should be focusing on. I don't see
-
-13:34.388 --> 13:38.686
-a world where crypto cures cancer. It's a real stretch
-
-13:38.798 --> 13:41.982
-to say that crypto is going to create more economic efficiency
-
-13:42.046 --> 13:45.746
-and that's going to be the thing that cures cancer. It's like maybe or like
-
-13:45.768 --> 13:49.414
-maybe you're storing some cancer data on the blockchain and then
-
-13:49.532 --> 13:52.978
-that somehow becomes relevant to cancer researchers.
-
-13:53.074 --> 13:56.374
-It's a real stretch. I think crypto is good. I just don't think it's the
-
-13:56.412 --> 14:00.234
-only good technology, which is what a lot of, like, maxis think, a lot of
-
-14:00.272 --> 14:03.610
-maximalists think. What was it like meeting Elon Musk?
-
-14:04.350 --> 14:08.294
-This is funny, I actually haven't met Elon Musk. He has tried soylent,
-
-14:08.342 --> 14:11.834
-though. We set up a food truck in downtown La.
-
-14:11.872 --> 14:15.286
-And he just like, stopped by, which was cool. So I saw a photo
-
-14:15.318 --> 14:18.394
-of him drinking soylent, which was awesome. His chief of staff
-
-14:18.442 --> 14:21.946
-invested in my company, which was cool. And I've been to events where he's
-
-14:21.978 --> 14:26.078
-been there, but I haven't actually gotten to meet him yet. Now I
-
-14:26.084 --> 14:29.106
-don't know that I'd have a lot to ask him, even though obviously I make
-
-14:29.128 --> 14:32.786
-videos about him all the time. I think what would be more interesting would be
-
-14:32.888 --> 14:36.194
-for him to talk to another expert that
-
-14:36.232 --> 14:39.814
-can actually debate him on some of these points. I really want to see
-
-14:39.852 --> 14:43.206
-him debate Vitalik about crypto, and I would love
-
-14:43.228 --> 14:47.302
-to see him talk to George Hots about self driving cars because
-
-14:47.356 --> 14:50.682
-I feel like they would have a much better conversation than I ever
-
-14:50.736 --> 14:54.138
-could have with someone like that. So yeah, I think in general I want to
-
-14:54.144 --> 14:57.706
-see more debates between world experts as
-
-14:57.728 --> 15:01.402
-opposed to just more. Every individual expert goes around
-
-15:01.456 --> 15:04.814
-to all of the podcasters and they do individual interviews that are
-
-15:04.852 --> 15:07.886
-okay, but they don't really ever come into contact with each
-
-15:07.908 --> 15:11.518
-other. I think that that's what would be really, really entertaining. We used to
-
-15:11.524 --> 15:14.666
-have debates, but we don't really have them anymore because they're
-
-15:14.698 --> 15:17.806
-very, very risky to participate in. Well, that's it. If you have any more questions,
-
-15:17.908 --> 15:21.594
-just leave me a comment below. And if you're not already subscribed, please subscribe,
-
-15:21.642 --> 15:24.160
-because there's more videos coming soon. Thanks a lot.
-
-15:24.610 --> 15:28.100
-You close.
+05:22.788 --> 05:23.680
+the next video.

@@ -10,7 +10,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def generate_prompt(prompt):
     response = openai.Completion.create(
         engine="text-davinci-003",
-        prompt=f"Generate at least 2 astonishing mid-journey images from the following content:{prompt}",
+        prompt=f"Generate one astonishing mid-journey images from the following content:{prompt}",
         max_tokens=500,  # Adjust the max_tokens value as needed
         temperature=0.98,
         top_p=1.0,

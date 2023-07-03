@@ -1,31 +1,118 @@
 Number,Sentence,Prompt,Image Link
-1,"Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React query.",1.
-2,In this introductory video we will talk about the what and why of React query and in the rest of the series we will explore the different features it provides.,"A mid-journey image of two people looking at their laptop in a cafe, and talking about the different features provided by React Query."
-3,"Now, what I'm trying to do is make this channel a onestop shop for everything related to React.",2.
-4,So far we have tutorials on react fundamentals and advanced topics.,A mid-journey image of someone typing away on their laptop and highlighting the importance of having a library for data fetching.
-5,"React hooks, react, redux, react formic, react storybook, react, render practical, react, react table and react TypeScript.",3.
-6,To add to this list we are going to learn about the React query package.,A mid-journey image of a person checking the server state of a project on their laptop in a coffee shop.
-7,Let's begin with the what?,4.
-8,What is react query?,A mid-journey image of a person reading the React Query documentation on their laptop in a park.
-9,"Well, it is a library for fetching data in a React application.",5.
-10,Now you might wonder why would you need a library for data fetching?,A mid-journey image of two programmers discussing how to use React Query to make basic queries.
-11,"Since React is a UI library, there is no specific pattern for data fetching.",6.
-12,What we typically do is make use of Use effect hook for data fetching and use state hook to maintain component state like loading error or the resulting data if the data is needed throughout the app.,A mid-journey image of a programmer debugging a React code on their laptop in a library.
-13,We tend to use state management libraries.,7.
-14,But what is important to note here is that most of the state management libraries are good for working with client state like theme for the application or whether a model is open.,A mid-journey image of a programmer discussing with their co-worker how to set up an axios interceptor and work with React Query.
-15,They are not great for working with Asynchronous or Server State.,8.
-16,And this is because server state is very different to client state.,A mid-journey image of two co-workers implementing how to make use of Use effect hook for data fetching in a cafe.
-17,Client state is persisted in your app memory and accessing or updating it is synchronous.,9.
-18,"Server state on the other hand, is persisted remotely in a database perhaps and requires Asynchronous APIs for fetching or Updating.",A mid-journey image of a programmer using Use state hook to maintain component state when fetching data from a remote server.
-19,"Also, server state, unlike client state has shared ownership data can be updated by someone else without your knowledge, which can quickly lead to UI data that is not in sync with the remote data.",10.
-20,"It becomes even more challenging when you have to deal with caching deduping multiple requests for the same data, updating still data in the background, performance optimizations when it comes to pagination and lazy loading, et cetera.","A mid-journey image of a programmer debugging how to pull data, work with React query devtools and create reusable query hooks for data fetching on their laptop in a coffee shop."
-21,"If you have to cater to all these in an application, it requires significant time and effort to do it all by yourself.",11.
-22,Or you can take the smarter approach and use a library which makes handling all these scenarios a walk in the park.,"A mid-journey image of two co-workers discussing how to handle server state which requires Asynchronous APIs like pagination, lazy loading, et cetera for data fetching."
-23,"And you have probably guessed it, that library is React Query.",12.
-24,"I will even go to the extent of saying even if you don't have complex requirements like the ones I've stated here, watch this series and give React query a try for your data fetching needs because you'll not want to go back.",A mid-journey image of a programmer updating still data in the background while creating a React application in a library.
-25,That is how amazing this library is.,13.
-26,"Well, if I've convinced you, here are some of the features we are going to be implementing in this series with the React query package.",A mid-journey image of two programmers discussing the importance of invalidating queries when a mutation is successful.
-27,"We're going to learn how to make basic queries, how to pull data work with React query DevTools, how to create reusable query hooks for data fetching, how to query by ID, parallel queries, dynamic queries, dependent queries, infinite and paginated queries.",14.
-28,"We also need to keep in mind that server state is not just fetching, it also needs updating.",A mid-journey image of a programmer working on optimizing the performance of their React application by introducing React Query for data fetching.
-29,"We will learn how to update data using mutations, how to invalidate queries when a mutation is successful, optimistic Updates and we will wind up the series with a video on how to set up an axios interceptor and work with React query.",15.
-30,"By the end of the series, you'll have a really good knowledge of React query and data fetching in React.","A mid-journey image of a programmer using React Query to make handle complex scenarios like caching, deduping, and performing optimistic updates."
+1,"Hey everyone, my name is Vishwas and welcome to a brand new tutorial series on React query.","In this tutorial series we'll be exploring how to use React query to create and manage complex data connections in our React applications.
+
+1. A user's journey being mapped out, their current task highlighted in the center: 
+![Task Mapping](https://i.ibb.co/dQfF6CQ/Task-Mapping.jpg)
+
+2. An interactive graph showing the data connections available in React query: 
+![Data Network](https://i.ibb.co/fvPNLjB/Data-Network.jpg)"
+2,In this introductory video we will talk about the what and why of React query and in the rest of the series we will explore the different features it provides.,"1. Image of a person in a desert-like landscape, standing in front of a giant question mark made of rocks.
+
+2. Image of a person sitting in a garden, with a laptop open in front of them and a tree in the background with nodes that represent React query features."
+3,"Now, what I'm trying to do is make this channel a onestop shop for everything related to React.","1. Image of an open laptop with a React logo in the middle of a desert, with a tent nearby and a beautiful night sky sprinkled with stars in the background.
+
+2. Image of a person standing at the edge of a cliff and looking out over a sprawling landscape, with the React logo prominently displayed in the sky overhead."
+4,So far we have tutorials on react fundamentals and advanced topics.,"1. Image of a person in an astronaut outfit, reaching an arm out of the window of a space shuttle in a galaxy of stars.
+2. Image of a person in a reclined chair, in a state of deep concentration as they are surrounded by a vibrant and digitally-animated universe."
+5,"React hooks, react, redux, react formic, react storybook, react, render practical, react, react table and react TypeScript.","1) A mid-journey image showcasing the various parts of the React ecosystem connected together--hooks connected to Redux, Formic connected to Storybook, Render Practical connected to React Table, and React TypeScript rounding off the journey. The various components are represented by vibrant, interconnected circles, enclosing the React logo in the center. 
+
+2) A mid-journey image showcasing the process of building a React app, from start to finish. Hooks and React provide the framework, while Redux and Formic provide the scaffolding. Storybook and Render Practical add in the final components, with React Table and React TypeScript pulling everything together. The image is completed by a bright yellow React logo, making it clear that React has the ability to take your app from concept to completion."
+6,To add to this list we are going to learn about the React query package.,"1. ![Image of a React Query query package suspended mid-air being lifted by a hot air balloon with a rocky terrain in the background](https://cdn.pixabay.com/photo/2017/07/25/21/27/hot-air-balloon-2541065_960_720.jpg)
+
+2. ![Image of a React Query query package being carried up a mountain by eagles with snow capped peaks in the background](https://cdn.pixabay.com/photo/2017/05/07/13/21/eagle-2288366_960_720.jpg)"
+7,Let's begin with the what?,"1. An eagle soaring majestically over the sprawling alpine meadows, following a well-worn path lined with groves of evergreens and spectacular mountain peaks in the distance.
+
+Answer: 
+Image 1: A close-up of the eagle soaring through the sky, its wingspan casting a magnificent shadow over the alpine meadow below.
+
+Image 2: An aerial view of the evergreen grove, the majestic mountain peaks in the distance, and the eagle in flight, illuminated like a beacon in the middle of the landscape."
+8,What is react query?,"1.  ![Image of a Graph](https://i.imgur.com/9Gux1RL.png)
+2. ![Image of a Browser Window](https://i.imgur.com/i2jp6mG.png)"
+9,"Well, it is a library for fetching data in a React application.","Image 1: A library bookcase filled with books was being transported in mid-air, carried by a flock of magical owls.
+
+Image 2: A giant, magical chest of drawers with glimmering golden handles was being transported through a river, pulled along by several turtles."
+10,Now you might wonder why would you need a library for data fetching?,"1. Image of a person sitting in a library reading a book with words floating around it saying, ""Why do I need a library for data fetching?"" 
+
+2. Image of a person sitting in a library surrounded by lightbulbs with inspirational words popping up in different directions saying, ""Data fetching: Unlimit your possibilities!"""
+11,"Since React is a UI library, there is no specific pattern for data fetching.","Each data fetching solution is unique and depends on the nature of the application.
+
+1)  Image of an individual standing atop a mountain range, their hand outstretched to the horizon. A brightly glowing line is visible heading away from them, extending off into the distance. The line is composed of data points and symbols, illuminating the journey ahead. 
+
+2) An image of an individual standing within a network of equally spaced computers. Their arm is outstretched, each finger outstretched, reaching out into the network with an interactive and glowing symbol. The symbol is composed of code snippets and data models, all working together to create the perfect data fetching solution."
+12,What we typically do is make use of Use effect hook for data fetching and use state hook to maintain component state like loading error or the resulting data if the data is needed throughout the app.,"Image 1: A traveler standing in a desert lit up by the orange setting sun, their body silhouetted by a small campfire as the figure holds up a glowing globe in their cupped hands, the line of code from the content etched across its surface, reflecting the twin bonfire of the traveler's will and tenacious spirit.
+
+Image 2: A figure perched atop a lofty peak, stretching out into a vast night sky, their body outlined by starlight against a still lake far below. The figure holds a journal in their hands, illuminated by a massive, slowly spinning code wheel, mutli-colored lights spinning in a mesmerizing pattern - the hard work of journeying and conquering obstacles illuminating the way."
+13,We tend to use state management libraries.,"1. Image of a spaceship floating in a sea of lightning-like code, with a gigantic copy of a state management library balancing precariously atop the ship.
+2. Image of a group of space travelers standing on a cliff-like rock formation, surrounded by pillars of swirling code and lit up by the glow of a state management library floating in the air nearby."
+14,But what is important to note here is that most of the state management libraries are good for working with client state like theme for the application or whether a model is open.,"1. Image of a globe with the words ""theme"" and ""model"" highlighted in different parts. Bright beams of light radiating from each of the two highlighted zones. 
+
+2. Image of a computer monitor displaying two windows side-by-side, each with the words ""theme"" and ""model"" respectively in a different font. A glowing arrow in the center of the screen connects the two windows."
+15,They are not great for working with Asynchronous or Server State.,"Image 1: 
+A woman walking on a dirt road, surrounded by trees with a foggy mist dispersing in the background. She is carrying a laptop and tablet, with a look of confusion and frustration on her face. 
+
+
+Image 2:
+A person sitting among clouds, watching in awe as lightning bolts flash across the sky in a spectacular display. The person is holding a laptop and tablet, with a determined look upon their face."
+16,And this is because server state is very different to client state.,"1. 
+Image: A side-by-side image showing how server state and client state vary in complexity. The server state image is shown as a large computer with hundreds of hidden wires, while the client state image is a simple computer with fewer wires. 
+
+2. 
+Image: A diagram of a computer network with a separation in the middle to represent the concept of server state and client state. On one side of the separation are several computers connected to a main server, while on the other are smaller, simpler computers."
+17,Client state is persisted in your app memory and accessing or updating it is synchronous.,"1. A dark and mysterious cave filled with brightly-lit crystals and illuminated by glowing runes written on the walls. A lone figure stands in the center of the room, his hands outstretched, as though manipulating the client state in the air and watching as it is synchronized with the app memory. 
+
+2. A soaring view from above shows a forest landscape dotted with blue lights. Each light is a spark of energy that links to an individual's client state, which are being synched with the app memory in a pattern of infinite swirls and loops of energy."
+18,"Server state on the other hand, is persisted remotely in a database perhaps and requires Asynchronous APIs for fetching or Updating.","1. 
+![mid-journey](https://media.istockphoto.com/photos/open-circuit-in-the-system-picture-id527016033?k=6&m=527016033&s=612x612&w=0&h=B9TSan1nwBn4aCyqWaE1vHDhP4iyPWX9qt-OhoDgLMw=)
+
+2.
+![mid-journey](https://media.istockphoto.com/photos/asynchronous-data-flow-heavy-transfer-background-picture-id1172798827?k=6&m=1172798827&s=612x612&w=0&h=r4a8md6C8v6_jzA3ti9_KhS-uuOS9yVjcHMlKj6Lzt8=)"
+19,"Also, server state, unlike client state has shared ownership data can be updated by someone else without your knowledge, which can quickly lead to UI data that is not in sync with the remote data.","1) A person discovers their data has been altered without their knowledge, mid-journey along a desolate path with their data displayed in the sky in fragmented pieces. 
+
+2) A person suddenly appears on a path, seeing an out-of-sync remote data sheet in the sky with multiple pieces missing, hints of the original data scattered across the skyline."
+20,"It becomes even more challenging when you have to deal with caching deduping multiple requests for the same data, updating still data in the background, performance optimizations when it comes to pagination and lazy loading, et cetera.","Image 1: A person with disheveled hair and an overwhelmed expression is in the middle of a sea of computer cables and machines, all of which have strands of hair tangled in them.
+
+Image 2: A close-up image of a person's fingers resting on a keyboard, struggling to transcribe code on the screen. Surrounding the person's hands is a mess of wires and tech gadgets, some of which have pieces of paper sticking out from them."
+21,"If you have to cater to all these in an application, it requires significant time and effort to do it all by yourself.","1. Image: A person pulling their suitcase through a tunnel, surrounded by blocks of glowing light.
+
+2. Image: A person stepping out of a door surrounded by a light-filled world, with a suitcase still trailing behind them."
+22,Or you can take the smarter approach and use a library which makes handling all these scenarios a walk in the park.,"1. Image 1: A person with a suitcase walking through a library catalogue with a huge smile on their face. 
+
+2. Image 2: A person in the middle of a cityscape, with a suitcase and a book in their hands, looking up at gleaming towers of information."
+23,"And you have probably guessed it, that library is React Query.","1.	An image of a library filled with shelves and books with React Query signage above it. The shelves have two ladders hugging the sides, with one person reaching to the top shelf and another hopping off the bottom rung of the ladder.
+
+2. An image of the same library now filled with a sea of vibrant glowing lights and the shelves are covered in vibrant glowing symbols. The ladders are now floating just above the ground with the people now in a blackout bubble of suspended animation, with one person reaching towards the topwhile the other is blowing a bubble at the bottom."
+24,"I will even go to the extent of saying even if you don't have complex requirements like the ones I've stated here, watch this series and give React query a try for your data fetching needs because you'll not want to go back.","1. An individual standing at the top of a mountain overlooking an expansive valley of rolling hills, surrounded by a beautiful sunset sky. The individual’s right hand is reaching toward the vibrant horizon, symbolizing their moment of realization that React Query will fulfill their data fetching needs, no matter how complex. 
+
+2. A person walking into a clearing in the forest, where they spot a hut in a clearing. Inside, they find a wise mentor guiding them through how to use React Query to fulfill their data fetching needs. The person’s eyes are wide, illuminated by the knowledge they’ve now acquired."
+25,That is how amazing this library is.,"1. An image of an awe-inspiring amphitheater within the walls of the library, filled with students and adults of all ages discussing erudite topics. 
+
+2. An image of the library's expansive shelves, packed with books of all shapes, colors, and sizes, towering high over a small group of curious readers."
+26,"Well, if I've convinced you, here are some of the features we are going to be implementing in this series with the React query package.","1. Image A: A young woman standing atop a mountain, overlooking a majestic landscape spread out before her, phone in hand with the React query package highlighted on the screen.
+
+2. Image B: A young man diving in a sparkling lake surrounded by lush forests with the React query package highlighted on the device in his hand."
+27,"We're going to learn how to make basic queries, how to pull data work with React query DevTools, how to create reusable query hooks for data fetching, how to query by ID, parallel queries, dynamic queries, dependent queries, infinite and paginated queries.","1. 
+![Mid-Journey Image 1](https://images.unsplash.com/photo-1520974458477-88b0961bf90b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+2. 
+![Mid-Journey Image 2](https://images.unsplash.com/photo-1477764443046-731f082f2d7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80)"
+28,"We also need to keep in mind that server state is not just fetching, it also needs updating.","1. In mid-journey, the server is shown with its various states entwined. On its left side, multiple colorful wires can be seen tangled up against one another, while the right side is illuminated with different electrical signals moving up and down from the processor. In the centre of these two opposing forces lays the core of the server-- a formless sphere of glossy white light. 
+
+2. A close-up of the white light sphere reveals a sliver of circuitry, its many tiny parts, tiny coils and components humming in unison with the server's core. In the background, bursts of digital data rush up and down, keeping the server connected with its network of connections. The server shines brightly against its dark backdrop, a steadfast figure ready to continue along its journey."
+29,"We will learn how to update data using mutations, how to invalidate queries when a mutation is successful, optimistic Updates and we will wind up the series with a video on how to set up an axios interceptor and work with React query.","1. Image of a person with a laptop sandwiched between two towering mountains, looking determined as they program the mutation and query the data.
+![Person with laptop between two mountain](https://pixabay.com/photos/alps-mountains-nature-landscape-3570206/)
+
+2. Image of a person sitting in a mountainous terrain, confidently programming their data and code with a laptop, as the sky is filled with colorful clouds.
+![Person with laptop and colorful sky](https://www.pexels.com/photo/person-red-hoodie-sitting-on-brown-sofa-1620772/)"
+30,"By the end of the series, you'll have a really good knowledge of React query and data fetching in React.","Image 1: A person sitting cross-legged on a rocky beachfront, with a laptop open in their lap, coding furiously with the sun setting over the horizon in the background. 
+
+Image 2: A person holding a cup of coffee, looking out of the window of an airplane, with a React book open in their lap."
+31,"Hopefully, you will also be in a position to recommend this library at work and will be something your teammates appreciate as well.","1. Image of a person in a library with a big smile on their face, surrounded by coworkers, with a sign that reads ""You recommended this library. We appreciate you!"" 
+
+2. Image of the person in the middle of a hallway, pointing to a door that reads ""Library"". Surrounding them are numerous coworkers, smiling and raising their hands in appreciation."
+32,"Before we start though, let me tell you that to make the most out of this series, you must know the fundamentals of React, including React hooks.","1. Image of a person on a roller coaster, with a picture of React components on a laptop in the background. 
+2. Image of a person skiing down a mountain, with a picture of React hooks on a laptop to the side."
+33,"If you are new to React, please make sure to go through the fundamentals and the hooks series on this channel.","1. A person in mid-air spinning a React logo as if it was a lasso.
+
+2. A person riding a unicorn through a field of React logos."
+34,"Alright, with this in mind, let's get started in the next video.","1.  A grand four-masted sailing ship appearing out of the wispy morning fog, the sails billowing majestically as the ship cruises across a vast blue expanse of ocean. 
+
+2. A brilliant sunset horizon on an otherwise still ocean, a lone figure silhouetted on the stern of the ship, the fiery sunset painting a vivid contrast against the darkening night sky."

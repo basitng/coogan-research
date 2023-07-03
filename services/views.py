@@ -7,6 +7,7 @@ from utils.create_csv import create_csv_file
 from utils.create_file import create_file
 from utils.create_vtt import textToVTT
 from utils.extract_sentence import get_sentences
+from utils.openai import generate_sentences_prompts
 from utils.prompter import Prompter
 from utils.send_email import send_email
 
@@ -33,9 +34,7 @@ class VideoUploadView(APIView):
             return Response({'message': "Could not create a video transcript"}, status=status.HTTP_404_NOT_FOUND)
 
         content = get_sentences(transcript)
-        prompter = Prompter(transcript)
-        prompter.generate_prompts()
-        prompts = prompter.get_prompts()
+        prompts = generate_sentences_prompts(transcript)
 
         data = {
             'video_url': video_url,
