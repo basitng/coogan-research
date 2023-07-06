@@ -1,18 +1,19 @@
-from typing import Any
-from utils.openai import generate_prompt
+import re
 
 
-class Prompter:
+class NumberedPromptExtractor:
     def __init__(self, content):
-        self.content = content
+        # Join the list elements with line breaks
+        self.content = "\n".join(content)
         self.prompts = []
 
-    def generate_prompts(self):
-        prompts = generate_prompt(self.content)
-        prompts_array = [prompt.strip()
-                         for prompt in prompts.split('\n') if prompt.strip()]
-        for i, prompt in enumerate(prompts_array, start=1):
-            self.prompts.append(prompt)
+    def extract_prompts(self):
+        prompt_lines = self.content.split("\n")
+        for line in prompt_lines:
+            match = re.match(r"^\d+\.\s*(.*)$", line)
+            if match:
+                prompt = match.group(1).strip()
+                self.prompts.append(prompt)
 
     def get_prompts(self):
         return self.prompts

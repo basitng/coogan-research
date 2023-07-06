@@ -10,8 +10,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def generate_prompt(prompt):
     response = openai.Completion.create(
         engine="text-davinci-003",
-        prompt=f"Generate one astonishing mid-journey images from the following content:{prompt}",
-        max_tokens=500,  # Adjust the max_tokens value as needed
+        prompt=f"Generate three astonishing mid-journey images from the following content:{prompt}",
+        max_tokens=507,  # Adjust the max_tokens value as needed
         temperature=0.98,
         top_p=1.0,
         frequency_penalty=0.0,
@@ -28,5 +28,9 @@ def get_sentences(content):
 
 def generate_sentences_prompts(content):
     sentences = get_sentences(content)
-    prompts = [generate_prompt(sentence) for sentence in sentences]
+    prompts = []
+    for i in range(0, len(sentences), 3):
+        batch = sentences[i:i+3]
+        batch_prompts = [generate_prompt(sentence) for sentence in batch]
+        prompts.extend(batch_prompts)
     return prompts
