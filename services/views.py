@@ -85,6 +85,7 @@ class GenerateMidjourneyImage(APIView):
         content = PickleData("audio_content").retrieve_data()
         transcript = PickleData("audio_transcript").retrieve_data()
         prompts = PickleData("audio_prompts").retrieve_data()
+        print("🚀 ~ file: views.py:88 ~ prompts:", prompts)
 
         # Generate images from midjourney using prompts generated
         midjourney = Midjourney(api_key=os.getenv(
@@ -96,15 +97,14 @@ class GenerateMidjourneyImage(APIView):
 
             if result.get('status') == 'completed':
                 response = result
-                data = jsonDecrpter(response)
-                image_url = data['imageUrl']
+                image_url = response.get('imageUrl')
                 images_links.append(image_url)
             else:
                 message = result.get('message')
                 print(message)
 
         # Create CSV and transcript files
-        create_csv_file(content, prompts, csv_path)
+        create_csv_file(content, prompts, images_links, csv_path)
         create_file(transcript, file_path)
 
         # Send email with generated files

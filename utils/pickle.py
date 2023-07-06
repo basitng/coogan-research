@@ -28,3 +28,11 @@ class PickleData:
             print(
                 f'Error: Failed to retrieve data from "{pickle_filename}". {str(e)}')
             return None
+
+    def remove_pickle_file(self):
+        pickle_filename = f'{self.filename}.pickle'
+        if os.path.exists(pickle_filename):
+            os.remove(pickle_filename)
+            print(f'Pickle file "{pickle_filename}" has been removed.')
+        else:
+            print(f'Error: File "{pickle_filename}" does not exist.')
