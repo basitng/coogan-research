@@ -1,7 +1,10 @@
+import os
+from dotenv import load_dotenv
 import cloudinary.uploader
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from midjourney import Midjourney, jsonDecrpter
 
 from services.serializers import VideoFileSerializer
 from utils.create_csv import create_csv_file
@@ -12,6 +15,8 @@ from utils.openai import generate_sentences_prompts
 from utils.pickle import PickleData
 from utils.prompter import NumberedPromptExtractor
 from utils.send_email import send_email
+
+load_dotenv()
 
 
 class GetVideo(APIView):
@@ -81,12 +86,33 @@ class GenerateMidjourneyImage(APIView):
         transcript = PickleData("audio_transcript").retrieve_data()
         prompts = PickleData("audio_prompts").retrieve_data()
 
+        # Generate images from midjourney using prompts generated
+        midjourney = Midjourney(api_key=os.getenv(
+            "MIDJOURNEY_API_KEY"), callback_uri="")
+
+        for prompt in prompts:
+            seed = midjourney.imagine(prompt=prompt)
+            result = midjourney.result(seed=seed)
+
+            if result.get('status') == 'completed':
+                response = result
+                data = jsonDecrpter(response)
+                image_url = data['imageUrl']
+                images_links.append(image_url)
+            else:
+                message = result.get('message')
+                print(message)
+
         # Create CSV and transcript files
         create_csv_file(content, prompts, csv_path)
         create_file(transcript, file_path)
 
         # Send email with generated files
-        send_email(csv_path, transcript_file,
-                   file_path, "basitng2004@gmail.com")
+        try:
+            send_email(csv_path, transcript_file,
+                       file_path, "basitng2004@gmail.com")
+        except Exception as e:
+            print(f"Failed to send email: {str(e)}")
+            return Response({'message': "Failed to send email"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        return Response({'message': "Midjourney image generation complete!"})
+        return Response({'message': "Midjourney image generation complete!", 'images': images_links})
