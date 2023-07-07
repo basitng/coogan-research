@@ -27,7 +27,7 @@ class GetVideo(APIView):
 class VideoUploadView(APIView):
     def post(self, request, *args, **kwargs):
         video_file = request.FILES.get('video')
-        print("🚀 ~ file: views.py:22 ~ video_file:", video_file)
+        email = request.data.get('email')
 
         # Upload video file to Cloudinary
         response = cloudinary.uploader.upload(
@@ -62,6 +62,7 @@ class VideoUploadView(APIView):
         serializer.is_valid()
 
         # Store data using Pickle
+        PickleData("email").store_pickle_data(email)
         PickleData("audio_transcript").store_pickle_data(transcript)
         PickleData("audio_content").store_pickle_data(content)
         PickleData("audio_prompts").store_pickle_data(new_prompts)
@@ -82,10 +83,10 @@ class GenerateMidjourneyImage(APIView):
         transcript_file = "transcript.vtt"
 
         # Retrieve data using Pickle
+        email = PickleData("email").retrieve_data()
         content = PickleData("audio_content").retrieve_data()
         transcript = PickleData("audio_transcript").retrieve_data()
         prompts = PickleData("audio_prompts").retrieve_data()
-        print("🚀 ~ file: views.py:88 ~ prompts:", prompts)
 
         # Generate images from midjourney using prompts generated
         midjourney = Midjourney(api_key=os.getenv(
@@ -113,7 +114,7 @@ class GenerateMidjourneyImage(APIView):
         # Send email with generated files
         try:
             send_email(csv_path, transcript_file,
-                       file_path, "basitng2004@gmail.com")
+                       file_path, email)
         except Exception as e:
             print(f"Failed to send email: {str(e)}")
             return Response({'message': "Failed to send email"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
