@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-ophfj%^#-ar@=fg$%k*3&%y$uv*4s#$*pp!0%a%6%4g6gstyx0
 DEBUG = True
 
 ALLOWED_HOSTS = ["coogan-whisper.onrender.com", "localhost",
-                 "coogan-research-production.up.railway.app"]
+                 "coogan-research-production.up.railway.app", "coogan.netlify.app"]
 
 
 # Application definition
