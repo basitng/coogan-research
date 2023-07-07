@@ -75,7 +75,7 @@ class VideoUploadView(APIView):
 
 class GenerateMidjourneyImage(APIView):
     def post(self, request, *args, **kwargs):
-        images_links = []
+        images_links = {}
 
         csv_path = "activity.csv"
         file_path = "transcript.txt"
@@ -98,7 +98,10 @@ class GenerateMidjourneyImage(APIView):
             if result.get('status') == 'completed':
                 response = result
                 image_url = response.get('imageUrl')
-                images_links.append(image_url)
+                images_links['imageUrl'] = image_url
+                images_links['prompt'] = prompt
+                images_links['seed'] = seed
+
             else:
                 message = result.get('message')
                 print(message)
