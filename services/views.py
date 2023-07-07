@@ -109,7 +109,7 @@ class GenerateMidjourneyImage(APIView):
                 print(message)
 
         # Create CSV and transcript files
-        create_csv_file(content, prompts, images_links, csv_path)
+        create_csv_file(content, prompts, images_links['imageUrl'], csv_path)
         create_file(transcript, file_path)
 
         # Send email with generated files
