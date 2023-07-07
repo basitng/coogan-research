@@ -45,6 +45,7 @@ tqdm
 typing_extensions
 tzdata
 urllib3==1.26.16
+midjourney-py
 whitenoise
 yarl
 gunicorn
