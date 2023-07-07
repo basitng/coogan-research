@@ -1,7 +1,11 @@
 import requests
 import time
+import os
+from dotenv import load_dotenv
 
-API_TOKEN = "48c9dd4c9e274c4795ede224dea42b4e"
+load_dotenv()
+
+API_TOKEN = os.getenv("ASSEMBLY_API_KEY")
 
 
 class Assemblyai:
