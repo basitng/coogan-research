@@ -99,7 +99,6 @@ class GenerateMidjourneyImage(APIView):
             if result.get('status') == 'completed':
                 upscaled = midjourney.upscale(
                     task_id=seed.get("taskId"), position='2')
-                print("🚀 ~ file: views.py:101 ~ upscaled:", upscaled)
                 if upscaled['imageURL']:
                     image_url = upscaled['imageURL']
                     print(image_url)
