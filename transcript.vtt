@@ -1,256 +1,133 @@
 WEBVTT
 
-00:00.970 --> 00:04.506
-Hey everyone, my name is Vishwas and welcome to a brand
+00:00.650 --> 00:04.442
+React Query, a react library that simplifies the way we fetch,
 
-00:04.538 --> 00:07.790
-new tutorial series on React query.
+00:04.506 --> 00:07.630
+cache and synchronize data from a server. React itself
 
-00:08.850 --> 00:12.286
-In this introductory video we will talk about the what and
+00:07.700 --> 00:11.354
+has no opinions about how you fetch data from the front end. The most basic
 
-00:12.308 --> 00:16.206
-why of React query and in the rest of the series we
+00:11.402 --> 00:14.814
+approach is to use the browser fetch API when a component first
 
-00:16.228 --> 00:19.630
-will explore the different features it provides.
+00:14.852 --> 00:18.462
+mounts in Use Effect, then manage the response with Use State. That works,
 
-00:20.770 --> 00:24.474
-Now, what I'm trying to do is make this channel a onestop
+00:18.516 --> 00:21.562
+but becomes increasingly difficult when requirements like Caching,
 
-00:24.522 --> 00:27.510
-shop for everything related to React.
+00:21.626 --> 00:24.966
+Retries and Deduping come into play. React Query not only
 
-00:28.410 --> 00:32.002
-So far we have tutorials on react fundamentals
+00:25.028 --> 00:28.962
+simplifies your data fetching code, but also handles these complex requirements
 
-00:32.066 --> 00:35.554
-and advanced topics. React hooks, react,
+00:29.026 --> 00:32.358
+out of the box. For example, you might want to refresh data when the
 
-00:35.602 --> 00:39.190
-redux, react formic, react storybook,
+00:32.364 --> 00:35.906
+user leaves and then comes back to the same window. Fetch on Window Focus handles
 
-00:39.350 --> 00:43.542
-react, render practical, react, react table
+00:35.938 --> 00:39.426
+that for you. If you're building an infinite scroll feature, the Use Infinite Query
 
-00:43.686 --> 00:47.530
-and react TypeScript. To add
+00:39.458 --> 00:42.538
+hook will make your life much easier. Or if you're writing data to the
 
-00:47.600 --> 00:51.790
-to this list we are going to learn about the React query package.
+00:42.544 --> 00:46.422
+server, you can make changes appear instantly in the UI with optimistic updates.
 
-00:53.010 --> 00:57.002
-Let's begin with the what? What is react
+00:46.486 --> 00:50.006
+And you can debug all your data fetching logic with its integrated DevTools.
 
-00:57.066 --> 01:00.378
-query? Well, it is a library
+00:50.038 --> 00:52.906
+They've thought of pretty much everything, and it's so good at what it does that
 
-01:00.474 --> 01:03.140
-for fetching data in a React application.
+00:52.928 --> 00:56.090
+it might even eliminate your need for a global state management solution.
 
-01:04.550 --> 01:08.722
-Now you might wonder why would you need a library for data
+00:56.170 --> 00:59.722
+To get started, install it with NPM, then instantiate the query client
 
-01:08.776 --> 01:12.574
-fetching? Since React is a UI
+00:59.786 --> 01:03.486
+and provide it somewhere in your component tree. Now, every child component will
 
-01:12.622 --> 01:16.390
-library, there is no specific pattern for
+01:03.508 --> 01:07.054
+be able to fetch data like a pro. Also add the React Query DevTools here
 
-01:16.460 --> 01:20.150
-data fetching. What we typically do is
+01:07.092 --> 01:10.322
+to debug and development. Now, define a function anywhere you'd like
 
-01:20.220 --> 01:24.022
-make use of Use effect hook for data fetching and
+01:10.376 --> 01:13.522
+to fetch data from your server and the component that consumes that data.
 
-01:24.076 --> 01:27.998
-use state hook to maintain component state like loading
+01:13.576 --> 01:16.834
+Add the use query hook. It takes a key that allows React Query to
 
-01:28.114 --> 01:31.674
-error or the resulting data if
+01:16.872 --> 01:20.434
+manage this data efficiently, then the data fetching function as the second argument
 
-01:31.712 --> 01:35.734
-the data is needed throughout the app. We tend to use state management
+01:20.482 --> 01:24.006
+it will make. The request, then return the data and also the status of the
 
-01:35.782 --> 01:39.526
-libraries. But what is important to note
+01:24.028 --> 01:27.686
+request. If it's loading, we show a loading screen. If the request fails, it will
 
-01:39.558 --> 01:43.582
-here is that most of the state management libraries are
+01:27.708 --> 01:31.062
+actually retry the request three times, and if it still fails at that point,
 
-01:43.636 --> 01:47.950
-good for working with client state like
+01:31.116 --> 01:34.486
+the status will change to error. Now, if it was a success, we can render
 
-01:48.020 --> 01:51.390
-theme for the application or whether a model is
+01:34.518 --> 01:37.818
+out the data in the UI, and that's a lot of functionality with not a
 
-01:51.460 --> 01:54.962
-open. They are not great for working with
+01:37.824 --> 01:40.570
+lot of code. But you might be wondering what this key is all about.
 
-01:55.016 --> 01:57.540
-Asynchronous or Server State.
+01:40.640 --> 01:43.734
+Well, now let's imagine that we want to update this data on the server.
 
-01:58.150 --> 02:02.194
-And this is because server state is very different
+01:43.782 --> 01:47.006
+To handle that, we can bring in the Use Mutation hook. When data is
 
-02:02.312 --> 02:06.342
-to client state. Client state is
+01:47.028 --> 01:50.814
+written to the server, we can hook into it with the On Success function and
 
-02:06.396 --> 02:09.794
-persisted in your app memory and accessing
+01:50.852 --> 01:54.030
+automatically invalidate the query we already made based on its key.
 
-02:09.842 --> 02:12.390
-or updating it is synchronous.
+01:54.100 --> 01:57.770
+This tells React Query to invalidate and refresh the original request.
 
-02:13.290 --> 02:17.138
-Server state on the other hand, is persisted remotely
+01:57.850 --> 02:01.406
+And we can even tap into the state of this process by referencing is Fetching
 
-02:17.234 --> 02:21.142
-in a database perhaps and requires Asynchronous
+02:01.438 --> 02:04.418
+from Use Query to keep tabs on the loading state. Now, if you want to
 
-02:21.206 --> 02:24.010
-APIs for fetching or Updating.
+02:04.424 --> 02:07.426
+run multiple queries in the same component, you can easily do that, and it will
 
-02:25.070 --> 02:28.378
-Also, server state, unlike client state
+02:07.448 --> 02:11.334
+automatically run them in parallel to ensure optimal performance. But sometimes one
 
-02:28.464 --> 02:31.726
-has shared ownership data
+02:11.372 --> 02:15.042
+query might depend on data from another. Like all the cars owned by a user
 
-02:31.828 --> 02:35.482
-can be updated by someone else without your knowledge,
+02:15.106 --> 02:18.886
+that's also made easy with the enabled option. Like I said before, they've thought
 
-02:35.626 --> 02:39.614
-which can quickly lead to UI data that is not in sync with
+02:18.908 --> 02:22.118
+of everything. This has been React query in 100 seconds. If you
 
-02:39.652 --> 02:43.134
-the remote data. It becomes even more
+02:22.124 --> 02:25.586
+want to see more content like this, enroll in my full React course on fireship
 
-02:43.172 --> 02:46.682
-challenging when you have to deal with caching
+02:25.618 --> 02:28.806
+I O. That breaks down a ton of React concepts in 100 seconds or
 
-02:46.826 --> 02:50.260
-deduping multiple requests for the same data,
-
-02:50.710 --> 02:54.942
-updating still data in the background, performance optimizations
-
-02:55.006 --> 02:58.710
-when it comes to pagination and lazy loading, et cetera.
-
-02:59.850 --> 03:03.080
-If you have to cater to all these in an application,
-
-03:03.450 --> 03:06.886
-it requires significant time and effort to
-
-03:06.908 --> 03:10.634
-do it all by yourself. Or you can
-
-03:10.672 --> 03:14.362
-take the smarter approach and use a library which makes
-
-03:14.416 --> 03:17.610
-handling all these scenarios a walk in the park.
-
-03:18.030 --> 03:21.230
-And you have probably guessed it, that library is
-
-03:21.300 --> 03:24.606
-React Query. I will even go to
-
-03:24.628 --> 03:28.346
-the extent of saying even if you don't have complex
-
-03:28.458 --> 03:32.694
-requirements like the ones I've stated here, watch this series
-
-03:32.762 --> 03:36.594
-and give React query a try for your data fetching needs because
-
-03:36.632 --> 03:40.514
-you'll not want to go back. That is how amazing this
-
-03:40.552 --> 03:43.570
-library is. Well,
-
-03:43.640 --> 03:46.806
-if I've convinced you, here are some of the
-
-03:46.828 --> 03:50.722
-features we are going to be implementing in this series with the React query
-
-03:50.786 --> 03:54.674
-package. We're going to learn how to make basic
-
-03:54.722 --> 03:58.474
-queries, how to pull data work with
-
-03:58.512 --> 04:02.294
-React query DevTools, how to create reusable
-
-04:02.342 --> 04:06.294
-query hooks for data fetching, how to query
-
-04:06.342 --> 04:09.318
-by ID, parallel queries,
-
-04:09.494 --> 04:12.590
-dynamic queries, dependent queries,
-
-04:13.010 --> 04:15.710
-infinite and paginated queries.
-
-04:16.850 --> 04:20.094
-We also need to keep in mind that server state is
-
-04:20.132 --> 04:24.530
-not just fetching, it also needs updating.
-
-04:25.270 --> 04:29.166
-We will learn how to update data using mutations,
-
-04:29.358 --> 04:33.570
-how to invalidate queries when a mutation is successful,
-
-04:33.910 --> 04:37.414
-optimistic Updates and we will wind up the series with
-
-04:37.452 --> 04:41.010
-a video on how to set up an axios interceptor
-
-04:41.090 --> 04:43.110
-and work with React query.
-
-04:44.330 --> 04:48.102
-By the end of the series, you'll have a really good knowledge of
-
-04:48.156 --> 04:51.030
-React query and data fetching in React.
-
-04:51.690 --> 04:55.302
-Hopefully, you will also be in a position to recommend this
-
-04:55.356 --> 04:59.366
-library at work and will be something your teammates appreciate as
-
-04:59.388 --> 05:02.846
-well. Before we start though, let me
-
-05:02.868 --> 05:06.538
-tell you that to make the most out of this series,
-
-05:06.714 --> 05:09.722
-you must know the fundamentals of React,
-
-05:09.866 --> 05:13.658
-including React hooks. If you are new to React,
-
-05:13.754 --> 05:17.246
-please make sure to go through the fundamentals and the hooks series on
-
-05:17.268 --> 05:20.350
-this channel. Alright,
-
-05:20.500 --> 05:23.680
-with this in mind, let's get started in the next video.
+02:28.828 --> 02:31.420
+less. Thanks for watching and I will see you in the next one.

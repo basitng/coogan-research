@@ -97,13 +97,17 @@ class GenerateMidjourneyImage(APIView):
             result = midjourney.result(seed=seed)
 
             if result.get('status') == 'completed':
-                response = result
-                image_url = response.get('imageUrl')
-                images_links.append({
-                    'imageUrl': image_url,
-                    'prompt': prompt,
-                    'seed': seed
-                })
+                upscaled = midjourney.upscale(
+                    task_id=seed.get("taskId"), position='2')
+                print("🚀 ~ file: views.py:101 ~ upscaled:", upscaled)
+                if upscaled['imageURL']:
+                    image_url = upscaled['imageURL']
+                    print(image_url)
+                    images_links.append({
+                        'imageUrl': image_url,
+                        'prompt': prompt,
+                        'seed': seed
+                    })
             else:
                 message = result.get('message')
                 print(message)
