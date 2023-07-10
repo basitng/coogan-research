@@ -108,14 +108,15 @@ class GenerateMidjourneyImage(APIView):
                 message = result.get('message')
                 print(message)
 
+        print(images_links)  # Print images_links for debugging
+
         # Create CSV and transcript files
-        create_csv_file(content, prompts, images_links['imageUrl'], csv_path)
+        create_csv_file(content, prompts, images_links, csv_path)
         create_file(transcript, file_path)
 
         # Send email with generated files
         try:
-            send_email(csv_path, transcript_file,
-                       file_path, email)
+            send_email(csv_path, transcript_file, file_path, email)
         except Exception as e:
             print(f"Failed to send email: {str(e)}")
             return Response({'message': "Failed to send email"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
