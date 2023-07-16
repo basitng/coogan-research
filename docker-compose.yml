@@ -1,11 +1,11 @@
 version: "3"
+
 services:
-  coogan:
-    build: .
-    volumes:
-      - .:/research
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - 8000:8000
-    image: coogan:research
-    container_name: coogan_container
-    command: python manage.py runserver 0.0.0.0:8000
+      - "8000:8000" # Map the container's port 8000 to the host's port 8000 (you can change this as needed)
+    volumes:
+      - .:/app

@@ -1,11 +1,22 @@
-FROM python:3.8
+# Use an official Python runtime as a base image
+FROM python:3.9
 
-RUN pip3 install --upgrade pip setuptools
+# Set environment variables for Python
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-ENV PYTHONUNBUFFERED = 1
+# Set the working directory inside the container
+WORKDIR /app
 
-WORKDIR /research
+# Copy the requirements.txt file and install the Python dependencies
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY requirements.txt requirements.txt
+# Copy the Django application code into the container
+COPY . /app/
 
-RUN pip3 install -r requirements.txt
+# Collect the static files (Optional, but recommended for production)
+RUN python manage.py collectstatic --noinput
+
+# Start the Django development server (Change the port as per your Django settings)
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
