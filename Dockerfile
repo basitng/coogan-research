@@ -1,5 +1,7 @@
 FROM python:3.8
 
+RUN pip3 install --upgrade pip setuptools
+
 ENV PYTHONUNBUFFERED = 1
 
 WORKDIR /research
