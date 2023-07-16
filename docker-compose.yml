@@ -1,0 +1,11 @@
+version: "3"
+services:
+  coogan:
+    build: .
+    volumes:
+      - .:/research
+    ports:
+      - 8000:8000
+    image: coogan:research
+    container_name: coogan_container
+    command: python manage.py runserver 0.0.0.0:8000
