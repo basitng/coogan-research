@@ -1,0 +1,1375 @@
+WEBVTT
+
+00:01.290 --> 00:04.810
+Okay. Today I want to talk about AJ.
+
+00:04.890 --> 00:08.394
+Piplica. Who's the founder and CEO of Hermes,
+
+00:08.522 --> 00:11.886
+a tech startup. A deep tech startup that's building a
+
+00:11.908 --> 00:15.358
+hypersonic aircraft. It's a fascinating company.
+
+00:15.524 --> 00:19.594
+And I actually first met him on Twitter. I had made this joke
+
+00:19.722 --> 00:23.454
+about how if I were president for a day and I had complete control over,
+
+00:23.492 --> 00:27.394
+the government would recommission the SR
+
+00:27.442 --> 00:31.346
+71, the famous supersonic plane that was designed
+
+00:31.378 --> 00:34.966
+by Lockheed Martin Skunkworks and has been out of commission for
+
+00:34.988 --> 00:38.906
+a few decades now. And the reason was that I thought
+
+00:39.008 --> 00:42.458
+that bringing the plane back would send an amazing message
+
+00:42.624 --> 00:46.042
+to the world that America just takes
+
+00:46.096 --> 00:49.766
+being in person super seriously. So the queen had recently
+
+00:49.798 --> 00:53.262
+died, and it would have just been so badass in my mind if
+
+00:53.316 --> 00:56.698
+the American president could have hopped on a supersonic plane
+
+00:56.794 --> 01:00.670
+and been in London paying his respects 90
+
+01:00.740 --> 01:04.274
+minutes after the news broke instead of a few days later when
+
+01:04.392 --> 01:08.258
+Air Force One can kind of make a proper
+
+01:08.344 --> 01:11.934
+trip. And so I had tweeted this joke
+
+01:11.982 --> 01:15.950
+out and AJ. Replied and was like, I'm going to make that a reality.
+
+01:16.110 --> 01:20.178
+I was like, okay. Yeah, he's got this company. He's got some cool renders.
+
+01:20.354 --> 01:23.814
+Who knows if he's actually going to do it. But I
+
+01:23.852 --> 01:27.238
+recently toured their facility, and it's very, very real.
+
+01:27.324 --> 01:30.826
+He is absolutely building a hypersonic aircraft. And I
+
+01:30.848 --> 01:34.874
+believe he's going to do it. And he's actually tracking his progress to
+
+01:34.992 --> 01:38.614
+the speed at which Lockheed Martin Skunkworks Division built the SR
+
+01:38.662 --> 01:42.358
+71. And he's trying to build a plane faster than
+
+01:42.384 --> 01:47.630
+they did, which is incredible because it's one of, like, the historical incredible
+
+01:47.970 --> 01:51.726
+projects like the Manhattan Project that just happened so quickly. And we
+
+01:51.748 --> 01:55.394
+don't really see that in government projects. Everything goes over budget and over
+
+01:55.432 --> 01:59.460
+time, and he's trying to bring that back. And it's really, really exciting to
+
+02:00.710 --> 02:03.906
+you know, I've toured the facility. I spent a full day there
+
+02:03.928 --> 02:07.554
+in Atlanta, and I met with all the co founders, saw everything
+
+02:07.592 --> 02:10.934
+in facility, and it was just a fascinating experience. So I'm excited to
+
+02:11.052 --> 02:14.262
+tell you about it. And I've actually done a few videos on YouTube about
+
+02:14.396 --> 02:17.606
+supersonic technology in the past. One was about
+
+02:17.628 --> 02:20.850
+the SR 71, and then the other one was about this company, Boom, which is
+
+02:20.860 --> 02:24.470
+a Y combinator company. They've raised a bunch of money and they're making a supersonic
+
+02:24.550 --> 02:28.282
+jetliner for commercial air flight. And it's a very, very different
+
+02:28.336 --> 02:31.546
+approach. Boom. As you'll see with the story. Like they're going
+
+02:31.648 --> 02:34.958
+non military. Pure commercial. They're building a lot of stuff themselves.
+
+02:35.044 --> 02:38.494
+It's very capital intensive. And Hermes and AJ. Have just taken a completely
+
+02:38.532 --> 02:42.142
+different approach, so it's definitely worth diving into. I want both companies
+
+02:42.196 --> 02:45.426
+to succeed genuinely, just because it'd be really cool to be able to fly from
+
+02:45.448 --> 02:49.134
+New York to London in 90 minutes. And It Would Also be Great if America
+
+02:49.182 --> 02:52.946
+Could solve the hypersonic vehicle problem and have that
+
+02:52.968 --> 02:56.722
+technology defending us. But I
+
+02:56.776 --> 03:00.418
+like how Hermes has kind of decomposed the problem on their side, as you'll
+
+03:00.434 --> 03:04.082
+see. So let's go into kind of why this matters.
+
+03:04.146 --> 03:07.554
+So the first thing is that the race for hypersonic weapons
+
+03:07.602 --> 03:10.986
+is super, super real right now. A lot of know it
+
+03:11.008 --> 03:14.538
+just gets lost in the headlines about Russia, China, Ukraine, Taiwan. There's all
+
+03:14.544 --> 03:18.042
+these different headlines going on, all these different geopolitical things.
+
+03:18.176 --> 03:21.786
+But hypersonic weapons are a really big deal, and I'll
+
+03:21.818 --> 03:25.290
+explain why. So we actually have hypersonic weapons.
+
+03:25.450 --> 03:29.214
+They're just rocket powered. So any ICBM is
+
+03:29.252 --> 03:31.360
+hypersonic. They travel at like, Mach 15,
+
+03:32.050 --> 03:35.426
+and every SpaceX rocket that goes into orbit goes
+
+03:35.528 --> 03:39.042
+well past hypersonic. And there isn't actually a true
+
+03:39.096 --> 03:43.202
+hypersonic barrier. There's a supersonic barrier, which is very much
+
+03:43.256 --> 03:46.290
+defined by physics. It's the point at which there's a sonic boom.
+
+03:46.950 --> 03:50.742
+And so it's very, very hard to get past that. But with hypersonics, that happens
+
+03:50.796 --> 03:54.514
+around mach five. But it isn't a very specific binary
+
+03:54.562 --> 03:58.294
+moment. It's just a moment where you're going so fast that the air chemistry around
+
+03:58.332 --> 04:01.610
+the vehicle changes. So there's a whole bunch of new problems
+
+04:01.680 --> 04:05.046
+that you need to solve as an aircraft designer. And it's something that's really held
+
+04:05.078 --> 04:08.246
+the technology back. It works very well on missiles,
+
+04:08.438 --> 04:12.166
+where you're sending off a rocket and you don't really care that it's
+
+04:12.198 --> 04:15.454
+going to come back because it's going to crash into your target. But in terms
+
+04:15.492 --> 04:19.680
+of reusable craft, which is obviously the future, hypersonic has been
+
+04:20.210 --> 04:24.034
+a real tough thing to solve. And the fear is
+
+04:24.072 --> 04:28.158
+that China is developing hypersonic
+
+04:28.174 --> 04:31.678
+missiles in Russia as well. And these hypersonic missiles can potentially carry
+
+04:31.694 --> 04:35.298
+a nuclear warhead or potentially take out an aircraft carrier. And that creates kind of
+
+04:35.304 --> 04:38.806
+a zone of defense around China that won't allow
+
+04:38.988 --> 04:42.838
+our aircraft carriers to maneuver into position. And if you
+
+04:42.844 --> 04:46.082
+remember, during the Taiwan strait cris, we actually brought
+
+04:46.146 --> 04:49.810
+two aircraft carrier groups into the Taiwan strait to kind of defend Taiwan.
+
+04:49.890 --> 04:53.110
+And if China has hypersonic missiles, we wouldn't be able to do that. And that's
+
+04:53.610 --> 04:57.530
+a big problem. And now the reason that hypersonic missiles and hypersonic weapons are so
+
+04:57.600 --> 05:00.858
+important is because it kind of splits the difference between what you get with an
+
+05:00.864 --> 05:04.182
+ICBM, which is really, really fast, but ultimately very predictable,
+
+05:04.246 --> 05:07.594
+because you're launching this rocket, it shoots off from the ground,
+
+05:07.642 --> 05:11.018
+and it's on a parabolic curve, and you can kind of intercept it very easily.
+
+05:11.114 --> 05:14.482
+On the flip side, you have a cruise missile which is
+
+05:14.536 --> 05:18.706
+targeted with a turbofan. It's basically like a fighter jet, and that
+
+05:18.728 --> 05:22.382
+means it's very maneuverable. If you've seen the old James Bond
+
+05:22.446 --> 05:25.858
+GoldenEye, I think it's GoldenEye. There's this moment where
+
+05:25.864 --> 05:28.706
+they fire off the cruise missile, and it's like flying through the canyons, and it's
+
+05:28.728 --> 05:32.306
+evading defenses. It's going very low and it's very unpredictable. So it's hard to shoot
+
+05:32.338 --> 05:36.146
+down, but it's ultimately slow so it can be shot down. And we have systems
+
+05:36.178 --> 05:39.790
+for that. But no one can shoot down a hypersonic missile
+
+05:39.810 --> 05:43.398
+at this point because it goes so fast, mach Five, and it's also maneuverable.
+
+05:43.494 --> 05:47.590
+So blending those two things together is really, really valuable.
+
+05:47.670 --> 05:51.338
+Now, Hermes isn't building hypersonic missiles. They're building hypersonic aircraft.
+
+05:51.434 --> 05:54.894
+And so that has a number of different applications. The first
+
+05:54.932 --> 05:59.002
+is ISR or intelligence surveillance and Reconnaissance,
+
+05:59.146 --> 06:02.654
+which is basically cameras and sensors on a plane. And this
+
+06:02.692 --> 06:06.194
+will allow the Hermes craft to kind of get
+
+06:06.232 --> 06:09.550
+into enemy airspace and take photos and do reconnaissance
+
+06:09.630 --> 06:13.138
+without getting shot down because it's traveling so fast. But it's also not
+
+06:13.304 --> 06:16.766
+predictable, the trajectory. And then ultimately,
+
+06:16.798 --> 06:20.806
+they do want to turn into a weapons platform and deploy drop bombs or
+
+06:20.828 --> 06:23.926
+drop missiles from it. And then ultimately, in the long,
+
+06:23.948 --> 06:26.978
+long term, they want to be able to carry people because obviously that would unlock
+
+06:26.994 --> 06:30.738
+a ton of really interesting applications. So the
+
+06:30.764 --> 06:34.490
+government has been working on this for a very long time. There's the SR 72,
+
+06:34.560 --> 06:38.826
+which is Lockheed's successor to the SR 71. That program,
+
+06:39.008 --> 06:42.326
+it was made public and then it was made private again when the stakes
+
+06:42.358 --> 06:45.706
+got raised and people started worrying about the hypersonic
+
+06:45.738 --> 06:49.294
+race really heating up. So we don't know that much about the SR 72
+
+06:49.332 --> 06:52.794
+project. But then there's also the Air Force's Mayhem
+
+06:52.842 --> 06:56.174
+project, which is another hypersonic program.
+
+06:56.292 --> 07:00.142
+And so Hermes is in kind of a very exciting
+
+07:00.206 --> 07:03.714
+space. But they're really the main startup that's really trying
+
+07:03.752 --> 07:07.374
+to go after this problem with kind of that startup mentality, really quick iteration.
+
+07:07.422 --> 07:11.142
+And we'll kind of get into their process of how they have
+
+07:11.196 --> 07:14.710
+solved some of the really hard problems to be able to iterate on this problem
+
+07:14.780 --> 07:18.486
+really quickly. And so the other
+
+07:18.508 --> 07:22.060
+point is that it's just an interesting company. They've raised $100 million from really cool
+
+07:22.430 --> 07:26.058
+investors. Kosla did their first round. Canaan did
+
+07:26.064 --> 07:28.986
+their second round. And then Sam Altman did their third round. And Founders Fund is
+
+07:29.008 --> 07:32.826
+also invested. So obviously I'm interested. And it's always
+
+07:32.848 --> 07:35.646
+good to see Sam Altman investing in something other than AI. Because it means that
+
+07:35.668 --> 07:38.510
+he doesn't just think that AI. Is going to dominate everything.
+
+07:38.660 --> 07:42.522
+He thinks that in the future, there will be a need for hypersonic aircraft,
+
+07:42.586 --> 07:45.760
+which I love to hear. So let's go into the background on,
+
+07:46.710 --> 07:49.822
+you know, he's born in Port Chester, New York, but he moves to South Florida
+
+07:49.886 --> 07:52.866
+in his early childhood. He loves Star Trek as a kid,
+
+07:52.968 --> 07:56.838
+and specifically, he loves that in Star Trek, most of the
+
+07:56.844 --> 08:01.218
+stories are driven by super, super fast vehicles.
+
+08:01.314 --> 08:04.742
+So all of the narratives revolve around going from one place to another
+
+08:04.796 --> 08:09.094
+extremely quickly. And so he develops this love of high
+
+08:09.132 --> 08:12.266
+speed aircraft very early. And then he also goes to an air
+
+08:12.288 --> 08:15.706
+show, and he sees a massive C Five aircraft, which is like one of the
+
+08:15.728 --> 08:19.178
+biggest cargo planes that's used by the military and he
+
+08:19.184 --> 08:23.018
+gets fascinated with this. And so he winds up going to study
+
+08:23.184 --> 08:27.386
+engineering at Georgia tech. He gets a bachelor's and a master's. He studied aerodynamics
+
+08:27.418 --> 08:30.960
+and fluid mechanics, which are like perfect for what he does because obviously
+
+08:31.410 --> 08:34.834
+you need really good aerodynamics to go mach five. And then when you're going
+
+08:34.872 --> 08:38.546
+mach five, fluid dynamics comes into it because the air chemistry is
+
+08:38.568 --> 08:41.934
+actually changing around the vehicle. So he kind of has the perfect background
+
+08:41.982 --> 08:45.620
+for hypersonic technology. And then
+
+08:46.470 --> 08:49.666
+he gets his first job. He works at NASA, the Johnson
+
+08:49.698 --> 08:53.880
+space center. But he gets his first job in this really weird way where
+
+08:54.250 --> 08:57.826
+his parents had gone to a talk that was hosted
+
+08:57.858 --> 09:01.606
+by Bill Nye, the science guy. And while they're
+
+09:01.638 --> 09:05.002
+there, they meet the CEO of this small aerospace company called
+
+09:05.056 --> 09:08.582
+spaceworks that's based in Atlanta. And the CEO,
+
+09:08.726 --> 09:11.802
+they tell the CEO, hey, we have this son who's really interested
+
+09:11.856 --> 09:15.166
+in aerospace. And he's like, whoa, well you should tell him
+
+09:15.188 --> 09:18.762
+to apply for an internship. So AJ does, and he gets an internship
+
+09:18.826 --> 09:22.334
+and he starts working at this company. He works his way up from intern to
+
+09:22.372 --> 09:26.174
+eventually becoming the CEO of a full subsidiary. It's a really fascinating
+
+09:26.222 --> 09:29.358
+rise. He just like rocket trajectory, no pun
+
+09:29.374 --> 09:33.074
+intended. And so he's an intern. And then he goes
+
+09:33.112 --> 09:36.738
+part time while he's in school. And after he graduates, he goes full time at
+
+09:36.824 --> 09:40.994
+spaceworks. And then Spaceworks creates a subsidiary called generation
+
+09:41.042 --> 09:44.678
+orbit, or Go, which is what the guys refer to it as.
+
+09:44.764 --> 09:48.690
+And the idea with this subsidiary was that they were going to create a hypersonic
+
+09:48.770 --> 09:52.234
+launch vehicle for small satellites. So if you remember
+
+09:52.272 --> 09:55.866
+back in 2013, 2015, there was
+
+09:55.888 --> 09:59.606
+a big kind of hype cycle almost around small satellites.
+
+09:59.638 --> 10:03.270
+So that's what SpaceX and Starlink became.
+
+10:03.350 --> 10:05.950
+You put up a bunch of these communication satellites and then you can do interesting
+
+10:06.020 --> 10:09.914
+things, whether that's in flight wi fi, or wireless
+
+10:09.962 --> 10:13.486
+in remote areas, there's a bunch of different applications. And then obviously
+
+10:13.668 --> 10:17.394
+there's military contracts as well. And so he is
+
+10:17.512 --> 10:20.946
+building this team out. He comes and joins as, he technically joined as
+
+10:20.968 --> 10:24.814
+the COO of the subsidiary. But then he got promoted to COO.
+
+10:24.862 --> 10:28.278
+And he basically builds out this whole team, hires a bunch of people.
+
+10:28.364 --> 10:32.230
+And the four key people that he hires at this company
+
+10:32.380 --> 10:35.990
+become all of his co founders at Hermes. And there's a very interesting
+
+10:36.060 --> 10:39.974
+kind of trajectory there. So they wind up building this
+
+10:40.012 --> 10:43.706
+thing. It's basically a ramjet, but it's air launched. So the
+
+10:43.728 --> 10:46.998
+big problem with ramjets, which is really the core technology that unlocks
+
+10:47.014 --> 10:50.294
+hypersonic flight, is that you need to get them up to speed.
+
+10:50.342 --> 10:53.430
+You can't start them on the ground like you can with a turbo fan.
+
+10:53.510 --> 10:57.086
+So a normal jet engine that you see in a fighter jet that
+
+10:57.108 --> 11:00.826
+takes off from an aircraft carrier, you spin up that engine and it just slowly
+
+11:00.858 --> 11:04.686
+starts producing more and more power until you're able to just take off and
+
+11:04.708 --> 11:08.178
+then you can go really, really fast. You can go Mach One, Mach Two,
+
+11:08.264 --> 11:12.274
+but those tend to cap out, and you can't push a turbofan to Mach
+
+11:12.312 --> 11:16.190
+Five, where the air chemistry changes, the air starts getting compressed by the shockwaves.
+
+11:16.270 --> 11:19.846
+It gets really, really complicated. Basically what they
+
+11:19.868 --> 11:22.390
+would do is they would fly up in a plane and then they would launch
+
+11:23.130 --> 11:26.854
+the Ramjet, which would then push the small satellite into
+
+11:26.892 --> 11:30.518
+orbit. And this was kind of the idea. There's been a bunch
+
+11:30.534 --> 11:34.186
+of different approaches to launching small satellites, but that's what he was
+
+11:34.208 --> 11:37.830
+doing. He's getting all this hypersonic
+
+11:37.910 --> 11:41.786
+experience, but he realizes that he wants to go bigger. And it seems like
+
+11:41.888 --> 11:45.422
+he basically built this amazing co founding team, but they
+
+11:45.476 --> 11:49.002
+didn't really have support from the ownership because they're this subsidiary
+
+11:49.066 --> 11:53.002
+and they're kind of operating as a startup, but they probably didn't have equity
+
+11:53.066 --> 11:56.206
+like a normal startup. And it was kind of and they probably didn't have all
+
+11:56.228 --> 12:00.254
+the decision making authority and they clearly had the skill sets. So eventually
+
+12:00.302 --> 12:03.650
+they break off. And it's kind of unclear how rough of an experience
+
+12:03.720 --> 12:07.890
+that was, but I get the feeling that it definitely shaped AJ's
+
+12:08.050 --> 12:12.086
+worldview and his drive. Like he wants to make this thing a success
+
+12:12.188 --> 12:16.310
+because of his experience in that kind of subsidiary world.
+
+12:16.380 --> 12:19.686
+And now he really owns his own destiny and that's very satisfying to him.
+
+12:19.788 --> 12:23.146
+So he puts together this team. While he's there, he gets this
+
+12:23.168 --> 12:26.346
+guy Glenn from Blue Origin Skyler, who interned at
+
+12:26.368 --> 12:30.618
+SpaceX. And then he eventually hires this guy Mike, who is a PhD and
+
+12:30.704 --> 12:35.338
+also worked at SpaceX. So he has this really, really solid team in aerospace.
+
+12:35.514 --> 12:38.910
+And they'd won some contracts with the government
+
+12:38.980 --> 12:42.606
+and NASA and DoD, and they spent three
+
+12:42.628 --> 12:46.594
+years working together. But then they eventually break off. And so when
+
+12:46.632 --> 12:50.674
+they break off, they have this great founding team. But they're all engineers and
+
+12:50.712 --> 12:54.414
+so they're not these financial shark
+
+12:54.462 --> 12:58.366
+guys who can go out and raise money on a pitch deck and a render
+
+12:58.478 --> 13:01.702
+overnight and just put together a massive funding round like a lot of people could
+
+13:01.756 --> 13:05.080
+during the boom. This was around 2018 when they started the company.
+
+13:05.690 --> 13:09.522
+So they're having a lot of trouble pitching the company. They apply to YC,
+
+13:09.666 --> 13:14.246
+and in a really weird thing, YC doesn't do second round interviews.
+
+13:14.358 --> 13:17.446
+They read your application, they do a 15 minutes interview
+
+13:17.558 --> 13:20.346
+and then they tell you they call you and tell you you got it.
+
+13:20.368 --> 13:23.434
+Or they send you an email and say, sorry, you didn't get it. But with
+
+13:23.472 --> 13:27.022
+Hermes, they actually gave them a second phone call and talked to them more
+
+13:27.076 --> 13:29.726
+and then decided that they didn't get the company. And this is like a really
+
+13:29.748 --> 13:33.466
+rough setback because obviously YC had funded
+
+13:33.498 --> 13:36.782
+Boom and it seemed like a cool would be a good
+
+13:36.836 --> 13:40.162
+fit, but the team didn't take it too hard. They just realized that
+
+13:40.216 --> 13:43.186
+they needed some people to help them pitch the company. So they put together this
+
+13:43.288 --> 13:46.174
+board of advisors of kind of more experienced,
+
+13:46.302 --> 13:49.942
+more reputable people who can kind of lend their credibility and this
+
+13:49.996 --> 13:53.494
+board of advisors kind of helps them kind of get the round together.
+
+13:53.612 --> 13:57.046
+They get really, really far with one VC who
+
+13:57.068 --> 14:00.326
+they didn't tell me the name but they were like
+
+14:00.348 --> 14:03.786
+clearly at the term sheet stage or in due diligence and at
+
+14:03.808 --> 14:07.482
+the last second they basically get rugged and the deal
+
+14:07.536 --> 14:10.714
+falls through. And they're all crushed because when the guys started the company
+
+14:10.832 --> 14:14.518
+they basically had all saved up enough money to live for six months
+
+14:14.624 --> 14:18.138
+on their personal burn rates. But if the company didn't
+
+14:18.154 --> 14:20.954
+get funding after six months they were going to have to get other jobs.
+
+14:21.002 --> 14:24.286
+Like the momentum was going to stall. It probably wouldn't have
+
+14:24.308 --> 14:27.762
+worked out. So they're getting really close to this and they
+
+14:27.816 --> 14:31.026
+lose the deal and so they all just kind of
+
+14:31.048 --> 14:35.022
+like take a day off and they go and work on basically the stupidest
+
+14:35.086 --> 14:38.350
+business ideas I've ever heard. And I think that they would agree that
+
+14:38.360 --> 14:41.826
+they were really dumb. Like, one guy goes off and builds
+
+14:41.858 --> 14:45.830
+a business plan to try and create a party bus that
+
+14:45.900 --> 14:50.290
+has a hot tub in it, and he's solving all these complex physics equations
+
+14:50.370 --> 14:53.606
+to see how the water would slosh around. It's like really, really silly
+
+14:53.638 --> 14:57.178
+stuff, but it scratches that itch for just, like, a really
+
+14:57.264 --> 15:00.566
+ridiculous problem that you can bring an engineering mindset
+
+15:00.598 --> 15:04.966
+to. They basically do a hackathon. And AJ goes off and thinks about selling Hamon
+
+15:04.998 --> 15:08.414
+Aberico, which is like this meat. I'd never even heard of it, but he's thinking
+
+15:08.452 --> 15:12.014
+about buying this meat and selling it on the street kind of directly to people
+
+15:12.052 --> 15:16.046
+because he found out that it has really high margins, and they're basically just
+
+15:16.068 --> 15:19.554
+in the lowest of lows. But then they get an email from
+
+15:19.592 --> 15:23.074
+Kosala Ventures who they had sent a pitch deck to and never really heard
+
+15:23.112 --> 15:26.594
+from a couple of months earlier. And Vinod Kosla wants to meet with them
+
+15:26.632 --> 15:30.366
+and another one of the partners, Sven, brings them in and they'd
+
+15:30.398 --> 15:32.818
+give this pitch and at the time they were just doing like a precede,
+
+15:32.834 --> 15:36.006
+like going to YC they only needed like 100K. Just kind of keep the
+
+15:36.028 --> 15:39.666
+lights on. Maybe don't even start building an engine because that'd
+
+15:39.698 --> 15:43.578
+be really expensive. Maybe just work on the pitch deck the story,
+
+15:43.744 --> 15:47.398
+get some spreadsheets together and then go raise like a real seed round.
+
+15:47.494 --> 15:51.274
+But Kosla is liking it so they kind of size up their ask in
+
+15:51.312 --> 15:54.570
+mid meeting. They're kind of like, yeah, we could definitely put a million or two
+
+15:54.640 --> 15:57.214
+to work. So they get their seed round done, I think it's a couple million
+
+15:57.252 --> 16:00.750
+bucks and that lets them go and build their first engine.
+
+16:00.900 --> 16:04.474
+And this starts kind of the cycle for Hermes,
+
+16:04.522 --> 16:07.906
+which is when you're doing this really hard deep tech
+
+16:08.088 --> 16:11.826
+problem, you can't just go straight to the finish line and try
+
+16:11.848 --> 16:15.426
+and build the hypersonic aircraft that has ISR capabilities and
+
+16:15.448 --> 16:18.818
+weapons on board and can defeat China. That's way too tall
+
+16:18.834 --> 16:22.438
+of an order. There's just too many unknowns. It's too capital intensive and
+
+16:22.444 --> 16:26.582
+there's way too much risk. So instead, they focus
+
+16:26.636 --> 16:30.022
+on this very broken up Iterative approach. So they basically
+
+16:30.156 --> 16:33.754
+raise money and then they build an engine. Then they go and
+
+16:33.792 --> 16:37.526
+test it. And we'll get into testing. It's crazy how complicated testing
+
+16:37.558 --> 16:41.750
+is for this company. And then they get a contract with government, which proves revenue
+
+16:41.830 --> 16:45.598
+or like, demand, and then they go and raise more, and then they've just kind
+
+16:45.604 --> 16:49.118
+of iterated on this basically every year. And that's allowed them to solve some
+
+16:49.124 --> 16:52.750
+of the really hard problems with working with the government and the DoD.
+
+16:53.190 --> 16:56.466
+And so they get the money from
+
+16:56.568 --> 17:00.306
+Kosla and
+
+17:00.328 --> 17:04.162
+then they start building their first engine. So they basically built
+
+17:04.216 --> 17:08.546
+this, I saw as a very rudimentary turbojet
+
+17:08.738 --> 17:12.454
+that spins up and provides some propellant into
+
+17:12.492 --> 17:16.118
+the Ramjet and then at a certain point flips over and then you're using the
+
+17:16.124 --> 17:19.266
+Ramjet power. And that's kind of the whole model.
+
+17:19.388 --> 17:23.094
+They're now building what's called the Chimera engine because obviously Chimera
+
+17:23.142 --> 17:26.890
+is like two things melded together and that
+
+17:26.960 --> 17:30.650
+really unlocks their ability to go both take off from the ground and
+
+17:30.720 --> 17:34.494
+go slow, but then also go really, really fast once the Ramjet kicks on.
+
+17:34.612 --> 17:38.126
+And so they get through this, they go and they
+
+17:38.148 --> 17:41.294
+build the first engine. And then they have to go and test it.
+
+17:41.332 --> 17:44.994
+And there's only like one or two wind
+
+17:45.032 --> 17:48.386
+tunnels that can actually test hypersonic engines that
+
+17:48.408 --> 17:51.938
+are publicly available. Or you can just they have capacity. There are
+
+17:51.944 --> 17:55.026
+probably some private ones, but startups don't have access to
+
+17:55.048 --> 17:59.750
+those. And I actually talked to this defense journalist, Alex Hollings,
+
+18:00.730 --> 18:04.566
+and I asked him if there was one thing that you could do if
+
+18:04.588 --> 18:08.482
+you were the President for a day, what would you do to help
+
+18:08.556 --> 18:12.454
+America win the race for hypersonic weaponry?
+
+18:12.582 --> 18:17.222
+And I was expecting him to, you know, pump some money into grants,
+
+18:17.366 --> 18:20.670
+know, accelerate this project or that project. And he told me, no,
+
+18:20.740 --> 18:24.206
+the one thing that the government needs to do is have more
+
+18:24.308 --> 18:27.482
+hypersonic testing tunnels built at various
+
+18:27.546 --> 18:31.514
+academic institutions and research facilities because that's
+
+18:31.562 --> 18:35.754
+truly where the key bottleneck
+
+18:35.802 --> 18:39.282
+is right now, in hypersonic research. So the guys drive
+
+18:39.336 --> 18:43.058
+their engine up to Indiana. I think they went to Notre Dame, where they
+
+18:43.064 --> 18:46.274
+have the tunnel, and they test it and it works, and they get good data
+
+18:46.312 --> 18:49.766
+and they prove that this idea of running the
+
+18:49.788 --> 18:54.066
+turbojet engine and then switching over to the Ramjet at a certain speed,
+
+18:54.178 --> 18:57.910
+it will work. And so that unlocks their Series A and then
+
+18:58.060 --> 19:00.390
+they get that done with Canaan.
+
+19:02.810 --> 19:06.650
+It's really funny about Ramjets everyone I've talked to who's technical in
+
+19:06.720 --> 19:09.986
+the defense tech hard tech world just loves
+
+19:10.038 --> 19:13.658
+Ramjets. There's this famous story about Palmer Lucky,
+
+19:13.754 --> 19:17.294
+where when Trey Stevens was pitching him the idea for
+
+19:17.332 --> 19:20.990
+Anderol, Palmer was already building a Ramjet
+
+19:21.490 --> 19:25.406
+in his swimming pool in Woodside, I think, and the neighbors were
+
+19:25.428 --> 19:28.482
+getting called, the cops were getting called because he's like building this crazy thing.
+
+19:28.536 --> 19:31.726
+But clearly every tinkerer loves Ramjets.
+
+19:31.838 --> 19:35.806
+And it's really cool to see Hermes finally trying to figure out how to commercialize
+
+19:35.838 --> 19:39.654
+these in a really serious way because it's a very old technology. But the
+
+19:39.692 --> 19:42.790
+real problem is not necessarily the
+
+19:42.860 --> 19:46.134
+tech risk here. And that's always kind of the best
+
+19:46.332 --> 19:49.786
+thing in defense tech startups is
+
+19:49.808 --> 19:53.894
+when they're not science projects, they're not trying to go off and invent
+
+19:53.942 --> 19:57.690
+an entirely new material or do fundamental material science research or
+
+19:57.760 --> 20:01.450
+have some fundamental breakthrough. It's more like the technology works.
+
+20:01.520 --> 20:04.078
+We just need to put it together in a different way. And then we need
+
+20:04.084 --> 20:07.486
+to solve all the hard steps of fundraising and then
+
+20:07.588 --> 20:11.134
+actually selling this into the military because that's obviously a really hard part.
+
+20:11.252 --> 20:15.150
+And so getting
+
+20:15.220 --> 20:18.306
+into the military and actually solving the Valley of
+
+20:18.328 --> 20:22.290
+Death is a theme that I've seen with all these companies. And so
+
+20:22.360 --> 20:25.842
+the way Hermes solved it was, first off, they hired this great guy from
+
+20:25.896 --> 20:29.078
+Anderol who had worked there and had a bunch of experience selling to the
+
+20:29.084 --> 20:31.750
+military. And then they really,
+
+20:31.820 --> 20:35.026
+really take a broad approach to what they're willing
+
+20:35.058 --> 20:39.010
+to do with government contracts. So their first contract,
+
+20:39.090 --> 20:43.226
+I believe, was to evaluate the viability of
+
+20:43.248 --> 20:46.826
+a hypersonic Air Force One. And I
+
+20:46.848 --> 20:48.906
+think they had a couple of million bucks in the bank. There was no way
+
+20:48.928 --> 20:53.214
+that they were going to promise to build a hypersonic Air Force One. But the
+
+20:53.252 --> 20:56.954
+fact that they were still able to get a contract
+
+20:57.002 --> 21:00.382
+and actually get some response from the government
+
+21:00.436 --> 21:04.334
+and get some buy in that, hey, we will actually
+
+21:04.372 --> 21:07.906
+give you money. There's now revenue on the books just to deliver kind
+
+21:07.928 --> 21:11.266
+of just a report and some data. And that's been some of
+
+21:11.288 --> 21:14.626
+the early projects. Everyone, obviously you want
+
+21:14.648 --> 21:17.846
+to drive to program of record where the military and
+
+21:17.868 --> 21:21.698
+the government is buying a capability on an ongoing basis. They're actually deploying
+
+21:21.714 --> 21:25.698
+it. It's having an impact. But with something that's as complicated as building a hypersonic
+
+21:25.794 --> 21:29.574
+aircraft, it's just not going to happen in year one or year two or
+
+21:29.612 --> 21:33.434
+even year three. So getting to the point, really understanding that
+
+21:33.472 --> 21:37.078
+and getting revenue on the books by doing these small programs
+
+21:37.094 --> 21:40.534
+where they can just turn over data or reports or just build one
+
+21:40.592 --> 21:44.414
+small piece for the government, but still satisfy and get good
+
+21:44.452 --> 21:48.110
+reviews and then get ready for the next contract, that's been a really
+
+21:48.180 --> 21:52.270
+big piece. And so one interesting
+
+21:52.420 --> 21:56.286
+learning, I mean, there's a bunch of interesting learnings, but one thing that they focused
+
+21:56.318 --> 22:00.494
+on throughout my conversation and my tour of the facility
+
+22:00.622 --> 22:03.902
+was the machine that builds the machine.
+
+22:04.046 --> 22:08.002
+So they're not just focused on building one aircraft,
+
+22:08.066 --> 22:11.826
+they really need to solve the entire supply chain
+
+22:11.938 --> 22:15.698
+and figure out how they can build an organization
+
+22:15.794 --> 22:19.910
+that produces these aircraft at scale
+
+22:19.990 --> 22:23.578
+in numbers pretty quickly. Because if it works,
+
+22:23.744 --> 22:27.562
+we know that the demand is know, russia and China are building
+
+22:27.616 --> 22:31.354
+a lot of these hypersonic weapons already. And so as soon as this
+
+22:31.392 --> 22:34.270
+thing is ready to go, the government will need a lot of them. And so
+
+22:34.340 --> 22:37.566
+hermes is going to need to solve their supply chain issues. So I think
+
+22:37.588 --> 22:40.794
+they got an investment from raytheon. And raytheon owns pratt and Whitney,
+
+22:40.842 --> 22:44.298
+which makes jet engines for American fightercraft.
+
+22:44.394 --> 22:47.954
+I think the f 22, it might be the f 16, but they've actually
+
+22:47.992 --> 22:51.246
+bought two of these huge pratt and whitney turbojet
+
+22:51.278 --> 22:55.074
+engines. And then they're going to basically take off
+
+22:55.112 --> 22:58.694
+the back, the afterburner of those
+
+22:58.892 --> 23:02.034
+jet engines and then attach their ram jets
+
+23:02.082 --> 23:05.638
+to them. And that will be the way that they build their engine.
+
+23:05.724 --> 23:09.094
+And it's very interesting because they're clearly obsessed with this idea of
+
+23:09.132 --> 23:12.166
+build versus buy. There's a lot that they still have to build. They're constantly,
+
+23:12.198 --> 23:15.306
+I mean, for the first version, I was
+
+23:15.328 --> 23:19.034
+talking to the co founder about how
+
+23:19.072 --> 23:22.714
+they were bending the pipes themselves and welding everything together themselves.
+
+23:22.832 --> 23:26.894
+And now they have really big 3D printing machines and all sorts of different ways
+
+23:26.932 --> 23:30.302
+to fabricate parts. But something as complicated as a jet engine,
+
+23:30.356 --> 23:33.794
+they're not going to be able to rebuild that internally, at least
+
+23:33.832 --> 23:37.294
+not anytime soon. So that's kind of why they've partnered and how they're
+
+23:37.342 --> 23:40.978
+thinking about building the machine that builds the
+
+23:40.984 --> 23:44.562
+machine. It's a really interesting phrase. And then
+
+23:44.696 --> 23:48.434
+that obviously really puts them in a different strategy
+
+23:48.482 --> 23:52.130
+as boom, which was originally, I think, partnered with rolls Royce
+
+23:52.210 --> 23:55.654
+to buy their engine. But then that didn't work
+
+23:55.692 --> 23:58.954
+out. I'm not exactly sure why. But now boom is trying to build
+
+23:58.992 --> 24:02.022
+a fully custom engine and it's going to be incredibly capital intensive.
+
+24:02.166 --> 24:06.042
+And the way boom is solving it is they're going off and getting
+
+24:06.096 --> 24:10.614
+money from the airlines
+
+24:10.662 --> 24:14.238
+and basically saying, hey, if you want access to
+
+24:14.404 --> 24:18.010
+supersonic aircraft on your most important flight routes,
+
+24:18.090 --> 24:21.374
+you better pony up and give us $200 million up front, or something
+
+24:21.412 --> 24:23.360
+like that. I don't exactly know the numbers,
+
+24:25.110 --> 24:28.562
+but for hermes, the government wants them
+
+24:28.616 --> 24:31.778
+to really bring this to market as fast as possible. And obviously they don't want
+
+24:31.784 --> 24:35.818
+to get stuck in the integration hell technical quagmire
+
+24:35.854 --> 24:39.926
+that might come with trying to build a turbojet or
+
+24:39.948 --> 24:43.874
+turbofan engine by themselves, especially when the off the shelf
+
+24:43.922 --> 24:47.742
+stuff works. And then the last thing that I noticed
+
+24:47.826 --> 24:51.610
+with hermes that's kind of very interesting
+
+24:51.680 --> 24:55.802
+and maybe under discussed is that even though they're all
+
+24:55.856 --> 24:59.798
+engineers and they had all this trouble pitching
+
+24:59.814 --> 25:03.534
+the company in the early days, but they're all really good
+
+25:03.572 --> 25:07.198
+at media now and I think they really understand the value of media. Even in
+
+25:07.204 --> 25:09.950
+a hard tech business where you're not selling to consumers,
+
+25:10.370 --> 25:13.934
+their customers, ultimately it's the government, at least
+
+25:13.972 --> 25:18.386
+for the next who knows how many years. But they
+
+25:18.408 --> 25:21.746
+have a podcast and they do a lot of media and they let YouTubers come
+
+25:21.768 --> 25:25.026
+in and tour it and make videos and stuff and they
+
+25:25.048 --> 25:28.982
+talk publicly about what they're building and I think that that
+
+25:29.036 --> 25:32.278
+really lets them solve. They're in Atlanta, they're going to need to
+
+25:32.284 --> 25:35.462
+pull people from all over the place to build this
+
+25:35.516 --> 25:38.860
+really solid engineering team. And so
+
+25:39.550 --> 25:42.906
+by having all of the co founders talk about the company culture, talk about
+
+25:42.928 --> 25:45.500
+the company evangelize for what they're doing,
+
+25:45.950 --> 25:50.286
+they're able to bring the
+
+25:50.308 --> 25:53.806
+customer is almost the employee. So they're able to recruit a bunch of people and
+
+25:53.828 --> 25:57.102
+then they're also able to have
+
+25:57.156 --> 26:00.974
+a really polished resource for
+
+26:01.172 --> 26:05.114
+the various politicians to get up to speed in Silicon
+
+26:05.162 --> 26:08.434
+Valley. I feel like everyone knows androol but
+
+26:08.472 --> 26:11.826
+I was talking to a congressman a couple months ago who had
+
+26:11.848 --> 26:15.614
+no idea what Androl was it just wasn't on his radar
+
+26:15.662 --> 26:19.246
+and he was telling me that he has defense
+
+26:19.278 --> 26:22.486
+budget to allocate and obviously anderol has
+
+26:22.508 --> 26:26.066
+like I think they have a hundred person team in Washington DC.
+
+26:26.178 --> 26:29.914
+Just to help sell to the government, educate people. But there's just the government's so
+
+26:29.952 --> 26:33.366
+big, there's hundreds of elected officials
+
+26:33.398 --> 26:36.826
+and then, like, thousands of people in the DoD that you might
+
+26:36.848 --> 26:40.282
+need to coordinate with. And so being able to tell
+
+26:40.336 --> 26:43.878
+your story, the Hermias team being able to
+
+26:43.904 --> 26:47.454
+tell their story is really, really important to get
+
+26:47.572 --> 26:50.846
+the important people and the key decision makers up to speed, to be able to
+
+26:50.868 --> 26:54.330
+make a decision on a contract very, very quickly and maybe decide to
+
+26:54.340 --> 26:58.386
+take a meeting that they wouldn't otherwise. And I think that's kind of a
+
+26:58.408 --> 27:01.762
+new era and obviously Palmer's leading the charge there.
+
+27:01.816 --> 27:06.180
+But there are obviously things that certain
+
+27:07.350 --> 27:09.878
+defense tech companies aren't going to be able to talk about. Even while I was
+
+27:09.884 --> 27:13.318
+there, there were obviously things that were classified and they couldn't talk about.
+
+27:13.404 --> 27:17.094
+But there's still so much cool stuff that they can talk about know?
+
+27:17.132 --> 27:20.330
+It's not just like the culture of their company in Atlanta. It's also just like
+
+27:20.400 --> 27:24.810
+the history of this technology and why it's important the geopolitical implications,
+
+27:25.390 --> 27:28.906
+their fundraising story and what they're actually building. A lot of
+
+27:28.928 --> 27:33.040
+that isn't classified. Maybe the more minut details are,
+
+27:33.810 --> 27:38.334
+but I was just very surprised that they were
+
+27:38.372 --> 27:41.726
+so open and are so capable of
+
+27:41.748 --> 27:45.534
+telling their story and really articulating why
+
+27:45.572 --> 27:48.974
+this is such an important thing. So yeah,
+
+27:49.012 --> 27:53.134
+that's the story of Hermes. I'm going to do a bigger video on this and
+
+27:53.172 --> 27:56.246
+cut together a bunch of the interview footage that I got while I
+
+27:56.268 --> 27:58.534
+was there. And yeah, I'm excited to share that with.
