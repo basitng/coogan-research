@@ -29,7 +29,7 @@ SECRET_KEY = "0x3fcbghs_89shxcm!lkmxxc!23bsjsmdhxc8976hdhndd"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.53.162.230", "localhost", "cogan.netlify.app"]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -161,18 +161,18 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'cloud347',
-    'API_KEY': '727994197945152',
-    'API_SECRET': 'dpYf1eEC3qgeaK1qwzJgZOpIlB0',
+    'CLOUD_NAME': 'CLOUDINARY_CLOUD_NAME',
+    'API_KEY': 'CLOUDINARY_API_KEY',
+    'API_SECRET': 'CLOUDINARY_API_SECRET',
     'INVALID_VIDEO_ERROR_MESSAGE': 'Please upload a valid video file.',
     'MAGIC_FILE_PATH': 'magic',
     'PREFIX': "/media/"
 }
 
 cloudinary.config(
-    cloud_name='cloud347',
-    api_key='727994197945152',
-    api_secret='dpYf1eEC3qgeaK1qwzJgZOpIlB0'
+    cloud_name='CLOUDINARY_CLOUDNAME',
+    api_key='CLOUDINARY_API_KEY',
+    api_secret='CLOUDINARY_API_SECRET',
 )
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
