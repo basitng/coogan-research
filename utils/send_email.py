@@ -5,8 +5,8 @@ import os
 
 
 def send_email(csv_path, vtt_path, file_path, receiver_email):
-    email_sender = "basitng2004@gmail.com"
-    email_password = 'qgjeiajbneykzbgl'
+    email_sender = "your email address"
+    email_password = 'your_password'
     email_receiver = receiver_email
     subject = "Video Transcription"
     body = f'''Dear {receiver_email.split("@")[0]},
@@ -27,7 +27,7 @@ Best regards,
 
 Ajaga Abdulbasit
 Coogan Research,
-basitng2004@gmail.com.
+{email_sender}
     '''
 
     # create an EmailMessage object
