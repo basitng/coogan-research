@@ -48,7 +48,7 @@ We welcome contributions from the community to enhance Whysper's capabilities an
 
 ## Contact
 
-If you have any questions, suggestions, or just want to say hello, feel free to reach out to our team at `contact@cooganresearch.com`.
+If you have any questions, suggestions, or just want to say hello, feel free to reach out to our team at `basitng2004@gmail.com`.
 
 Thank you for joining us on this exciting journey with Whysper!
 
